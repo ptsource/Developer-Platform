@@ -1,2 +1,2 @@
 # Developer-Plataform
-PTSource Developer Platform Syntax files and Documentation
+PTSource Developer Platform Tools and Documentation
