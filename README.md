@@ -7,7 +7,7 @@ The documentation is the also the focus of the releases since it is intended to 
 
 ## Totally and always free
 
-[You can visit here.](https://platform.ptsource.eu/)
+[You can visit here.](http://bit.ly/2lHEgbc)
 
 [You can download here > 100mb.](http://bit.ly/2ngpeKG)
 
