@@ -7,7 +7,7 @@ The documentation is the also the focus of the releases since it is intended to 
 ### Windows 10 ready
 
 
-[You can download here > 100mb.](http://bit.ly/2m8wk3q)
+[You can download here > 100mb.](http://bit.ly/2mH7wmw)
 
 ### Included 
 * Linux Shell
@@ -25,6 +25,6 @@ The documentation is the also the focus of the releases since it is intended to 
 
 [You can visit here.](http://bit.ly/2lHEgbc)
 
-[You can download here > 100mb.](http://bit.ly/2m8wk3q)
+[You can download here > 100mb.](http://bit.ly/2mH7wmw)
 
 You can find the latest documentation and tools here on Giihub.
