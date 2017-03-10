@@ -4,6 +4,8 @@ PTSource Developer Platform is a professional source code editor, tools, templat
 3DMLX is a markup language that describes three-dimensional spaces. Wherever possible, 3DMLX syntax is identical to or as similar to HTML syntax as possible. Grab a copy of the platform and start developing 3D for the web.
 The documentation is the also the focus of the releases since it is intended to increase interest in programming by students, making it enjoyble. You can contribute here with documentation and tools if you wish to do so.
 
+### Windows 10 ready
+
 
 [You can download here > 100mb.](http://bit.ly/2m8wk3q)
 
