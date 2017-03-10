@@ -15,6 +15,7 @@ The documentation is the also the focus of the releases since it is intended to 
 * C/C++ Compiler
 * Code beutifiers
 * Syntax Highlighting for over 100 languages
+* 3D Browser
 * Documentation
 * ... and much more
 
