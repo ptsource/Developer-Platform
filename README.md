@@ -16,10 +16,14 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
+[You can download here > 100mb.](http://bit.ly/2mdicGt)
+
 ![Box Shot](/images/box.png)
 
 ## Totally and always free
 
 [You can visit here.](http://bit.ly/2lHEgbc)
+
+[You can download here > 100mb.](http://bit.ly/2mdicGt)
 
 You can find the latest documentation and tools here on Giihub.
