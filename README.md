@@ -31,4 +31,4 @@ The documentation is the also the focus of the releases since it is intended to 
 
 You can find the latest documentation and tools here on Github.
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![Loading color schemes in PTSource Developer Platform](https://img.youtube.com/vi/EhvK0OCpORI/0.jpg)](https://www.youtube.com/watch?v=EhvK0OCpORI "Loading color schemes in PTSource Developer Platform")
