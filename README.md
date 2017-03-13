@@ -19,7 +19,7 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
-[You can download here > 100mb.](http://bit.ly/2mdicGt)
+[You can download here > 100mb.](http://bit.ly/2mkvUq0)
 
 ![Box Shot](/images/box.png)
 
@@ -27,6 +27,6 @@ The documentation is the also the focus of the releases since it is intended to 
 
 [You can visit here.](http://bit.ly/2lHEgbc)
 
-[You can download here > 100mb.](http://bit.ly/2mdicGt)
+[You can download here > 100mb.](http://bit.ly/2mkvUq0)
 
 You can find the latest documentation and tools here on Giihub.
