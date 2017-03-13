@@ -29,4 +29,6 @@ The documentation is the also the focus of the releases since it is intended to 
 
 [You can download here > 100mb.](http://bit.ly/2mkvUq0)
 
-You can find the latest documentation and tools here on Giihub.
+You can find the latest documentation and tools here on Github.
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
