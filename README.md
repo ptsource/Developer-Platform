@@ -32,3 +32,5 @@ The documentation is the also the focus of the releases since it is intended to 
 You can find the latest documentation and tools here on Github.
 
 [![Loading color schemes in PTSource Developer Platform](https://img.youtube.com/vi/EhvK0OCpORI/0.jpg)](https://www.youtube.com/watch?v=EhvK0OCpORI "Loading color schemes in PTSource Developer Platform")
+
+[![Beautify HTML5 and PHP with the PTSource Developer Platform](https://img.youtube.com/vi/VgTKkNsloyc/0.jpg)](https://www.youtube.com/watch?v=VgTKkNsloyc "Beautify HTML5 and PHP with the PTSource Developer Platform")
