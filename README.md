@@ -31,10 +31,12 @@ The documentation is the also the focus of the releases since it is intended to 
 
 You can find the latest documentation and tools here on Github.
 
+## You can see some videos bellow
+#### Loading color schemes in PTSource Developer Platform
 [![Loading color schemes in PTSource Developer Platform](https://img.youtube.com/vi/EhvK0OCpORI/0.jpg)](https://www.youtube.com/watch?v=EhvK0OCpORI "Loading color schemes in PTSource Developer Platform")
-
+#### Beautify HTML5 and PHP with the PTSource Developer Platform
 [![Beautify HTML5 and PHP with the PTSource Developer Platform](https://img.youtube.com/vi/VgTKkNsloyc/0.jpg)](https://www.youtube.com/watch?v=VgTKkNsloyc "Beautify HTML5 and PHP with the PTSource Developer Platform")
-
+#### 3D Web Programming and Previewing in PTSource Developer Platform
 [![3D Web Programming and Previewing in PTSource Developer Platform](https://img.youtube.com/vi/qdCmrF4XquQ/0.jpg)](https://www.youtube.com/watch?v=qdCmrF4XquQ "3D Web Programming and Previewing in PTSource Developer Platform")
-
+#### Using the Linux Bash Shell in PTSource Developer Platform
 [![Using the Linux Bash Shell in PTSource Developer Platform](https://img.youtube.com/vi/t9wYlzWTIzs/0.jpg)](https://www.youtube.com/watch?v=t9wYlzWTIzs "Using the Linux Bash Shell in PTSource Developer Platform")
