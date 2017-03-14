@@ -1,0 +1,22 @@
+; BASIC TEMPLATE FILE FOR Z80 ASSEMBLY
+;=======================================
+
+	ORG	00100H
+	
+	DSEG
+
+HELLO_STRING:
+	DB	'HELLO WORD'
+	DB	13,10,0
+	
+;=======================================
+
+	CSEG
+	
+	LD	DE,HELLO_STRING
+	CALL	PRINTF
+	RET
+
+	END
+
+;=======================================
