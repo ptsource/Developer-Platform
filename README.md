@@ -19,7 +19,7 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
-[You can download here > 100mb.](http://bit.ly/2mkvUq0)
+[You can download here > 100mb.](http://bit.ly/2nBSP1m)
 
 ![Box Shot](/images/box.png)
 
@@ -27,7 +27,7 @@ The documentation is the also the focus of the releases since it is intended to 
 
 [You can visit here.](http://bit.ly/2lHEgbc)
 
-[You can download here > 100mb.](http://bit.ly/2mkvUq0)
+[You can download here > 100mb.](http://bit.ly/2nBSP1m)
 
 You can find the latest documentation and tools here on Github.
 
