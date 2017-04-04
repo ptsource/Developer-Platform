@@ -19,15 +19,15 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
-[You can download here > 100mb.](http://bit.ly/2nBUkfS)
+[You can download here > 100mb.](https://www.dropbox.com/s/nm36nkf6gc4yj0z/PTEditor.zip?dl=1)
 
 ![Box Shot](/images/box.png)
 
 ## Totally and always free
 
-[You can visit here.](http://bit.ly/2lHEgbc)
+[You can visit here.](http://platform.ptsource.eu/)
 
-[You can download here > 100mb.](http://bit.ly/2nBSP1m)
+[You can download here > 100mb.](https://www.dropbox.com/s/nm36nkf6gc4yj0z/PTEditor.zip?dl=1)
 
 You can find the latest documentation and tools here on Github.
 
