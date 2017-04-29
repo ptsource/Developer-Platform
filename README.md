@@ -10,6 +10,8 @@ The documentation is the also the focus of the releases since it is intended to 
 * Linux Shell
 * Windows Shell
 * C/C++ Compiler included
+* MiniGui C/C++ included
+* FASM Compiler included
 * Macros
 * Code beautifiers
 * Syntax Highlighting for over 100 languages
