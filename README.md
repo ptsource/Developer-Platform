@@ -34,6 +34,8 @@ The documentation is the also the focus of the releases since it is intended to 
 You can find the latest documentation and tools here on Github.
 
 ## You can see some videos bellow
+#### Bulding database applications with MiniGui on PTSource Developer Platform
+[![Bulding database applications with MiniGui on PTSource Developer Platform](https://img.youtube.com/vi/qIYoQEYjyJ4/0.jpg)](https://www.youtube.com/watch?v=qIYoQEYjyJ4 "Bulding database applications with MiniGui on PTSource Developer Platform")
 #### Making ASM applications with PTSource Developer Platform
 [![Making ASM applications with PTSource Developer Platform](https://img.youtube.com/vi/XcZSEpQ_B9k/0.jpg)](https://www.youtube.com/watch?v=XcZSEpQ_B9k "Making ASM applications with PTSource Developer Platform")
 #### Loading color schemes in PTSource Developer Platform
