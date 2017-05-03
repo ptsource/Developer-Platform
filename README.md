@@ -21,7 +21,7 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
-[You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
+[You can download here > 100mb.](https://forums.ptsource.eu/)
 
 ![Box Shot](/images/box.png)
 
@@ -29,7 +29,7 @@ The documentation is the also the focus of the releases since it is intended to 
 
 [You can visit here.](http://platform.ptsource.eu/)
 
-[You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
+[You can download here > 100mb.](https://forums.ptsource.eu/)
 
 You can find the latest documentation and tools here on Github.
 
