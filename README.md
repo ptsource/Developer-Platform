@@ -25,15 +25,13 @@ The documentation is the also the focus of the releases since it is intended to 
 
 ![Box Shot](/images/box.png)
 
-## Totally and always free
+## Support
 
 [You can visit here.](https://ptsource.eu/)
 
 [The forums home page.](https://forums.ptsource.eu/)
 
 [You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
-
-You can find the latest documentation and tools here on Github.
 
 ## You can see some videos bellow
 [Charts for databases with MiniGui on the PTSource Developer Platform](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with MiniGui on the PTSource Developer Platform")
