@@ -21,21 +21,23 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
-[You can download here > 100mb.](https://forums.ptsource.eu/)
+[You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ![Box Shot](/images/box.png)
 
 ## Totally and always free
 
-[You can visit here.](http://platform.ptsource.eu/)
+[You can visit here.](https://ptsource.eu/)
 
-[You can download here > 100mb.](https://forums.ptsource.eu/)
+[The forums home page.](https://forums.ptsource.eu/)
+
+[You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 You can find the latest documentation and tools here on Github.
 
 ## You can see some videos bellow
 #### Charts for databases with MiniGui on the PTSource Developer Platform
-[![Charts for databases with MiniGui on the PTSource Developer Platform](/images/1.png)](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with MiniGui on the PTSource Developer Platform")
+[Charts for databases with MiniGui on the PTSource Developer Platform](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with MiniGui on the PTSource Developer Platform")
 #### Bulding database applications with MiniGui on PTSource Developer Platform
 [![Bulding database applications with MiniGui on PTSource Developer Platform](/images/2.png)](https://www.youtube.com/watch?v=qIYoQEYjyJ4 "Bulding database applications with MiniGui on PTSource Developer Platform")
 #### Making ASM applications with PTSource Developer Platform
