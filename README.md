@@ -35,16 +35,16 @@ You can find the latest documentation and tools here on Github.
 
 ## You can see some videos bellow
 #### Charts for databases with MiniGui on the PTSource Developer Platform
-[![Charts for databases with MiniGui on the PTSource Developer Platform](https://img.youtube.com/vi/8g-dEsh9xOs/0.jpg)](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with MiniGui on the PTSource Developer Platform")
+[![Charts for databases with MiniGui on the PTSource Developer Platform](/images/1.png)](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with MiniGui on the PTSource Developer Platform")
 #### Bulding database applications with MiniGui on PTSource Developer Platform
 [![Bulding database applications with MiniGui on PTSource Developer Platform](https://img.youtube.com/vi/qIYoQEYjyJ4/0.jpg)](https://www.youtube.com/watch?v=qIYoQEYjyJ4 "Bulding database applications with MiniGui on PTSource Developer Platform")
 #### Making ASM applications with PTSource Developer Platform
-[![Making ASM applications with PTSource Developer Platform](https://img.youtube.com/vi/XcZSEpQ_B9k/0.jpg)](https://www.youtube.com/watch?v=XcZSEpQ_B9k "Making ASM applications with PTSource Developer Platform")
+[![Making ASM applications with PTSource Developer Platform](/images/2.png)](https://www.youtube.com/watch?v=XcZSEpQ_B9k "Making ASM applications with PTSource Developer Platform")
 #### Loading color schemes in PTSource Developer Platform
-[![Loading color schemes in PTSource Developer Platform](https://img.youtube.com/vi/EhvK0OCpORI/0.jpg)](https://www.youtube.com/watch?v=EhvK0OCpORI "Loading color schemes in PTSource Developer Platform")
+[![Loading color schemes in PTSource Developer Platform](/images/3.png)](https://www.youtube.com/watch?v=EhvK0OCpORI "Loading color schemes in PTSource Developer Platform")
 #### Beautify HTML5 and PHP with the PTSource Developer Platform
-[![Beautify HTML5 and PHP with the PTSource Developer Platform](https://img.youtube.com/vi/VgTKkNsloyc/0.jpg)](https://www.youtube.com/watch?v=VgTKkNsloyc "Beautify HTML5 and PHP with the PTSource Developer Platform")
+[![Beautify HTML5 and PHP with the PTSource Developer Platform](/images/5.png)](https://www.youtube.com/watch?v=VgTKkNsloyc "Beautify HTML5 and PHP with the PTSource Developer Platform")
 #### 3D Web Programming and Previewing in PTSource Developer Platform
-[![3D Web Programming and Previewing in PTSource Developer Platform](https://img.youtube.com/vi/qdCmrF4XquQ/0.jpg)](https://www.youtube.com/watch?v=qdCmrF4XquQ "3D Web Programming and Previewing in PTSource Developer Platform")
+[![3D Web Programming and Previewing in PTSource Developer Platform](/images/6.png)](https://www.youtube.com/watch?v=qdCmrF4XquQ "3D Web Programming and Previewing in PTSource Developer Platform")
 #### Using the Linux Bash Shell in PTSource Developer Platform
-[![Using the Linux Bash Shell in PTSource Developer Platform](https://img.youtube.com/vi/t9wYlzWTIzs/0.jpg)](https://www.youtube.com/watch?v=t9wYlzWTIzs "Using the Linux Bash Shell in PTSource Developer Platform")
+[![Using the Linux Bash Shell in PTSource Developer Platform](/images/7.png)](https://www.youtube.com/watch?v=t9wYlzWTIzs "Using the Linux Bash Shell in PTSource Developer Platform")
