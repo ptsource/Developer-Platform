@@ -34,9 +34,9 @@ The documentation is the also the focus of the releases since it is intended to 
 [You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ## You can see some videos bellow
-[Charts for databases with MiniGui on the PTSource Developer Platform](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with MiniGui on the PTSource Developer Platform")
+[Charts for databases with Harbour on the PTSource Developer Platform](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with Harbour on the PTSource Developer Platform")
 
-[Bulding database applications with MiniGui on PTSource Developer Platform](https://www.youtube.com/watch?v=qIYoQEYjyJ4 "Bulding database applications with MiniGui on PTSource Developer Platform")
+[Bulding database applications with Harbour on PTSource Developer Platform](https://www.youtube.com/watch?v=qIYoQEYjyJ4 "Bulding database applications with Harbour on PTSource Developer Platform")
 
 [Making ASM applications with PTSource Developer Platform](https://www.youtube.com/watch?v=XcZSEpQ_B9k "Making ASM applications with PTSource Developer Platform")
 
