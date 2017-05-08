@@ -9,10 +9,15 @@ The documentation is the also the focus of the releases since it is intended to 
 ### Included 
 * Linux Shell
 * Windows Shell
-* C/C++ Compiler included
-* MiniGui C/C++ included
+* BCC C/C++ Compiler included
+* Harbour C/Cli Compiler included
 * FASM Compiler included
+* FreeBasic Compiler included
+* CHM Compiler included
+* PHP Winbinder Compiler included
+* Java Compiler included
 * Macros
+* Sample code
 * Code beautifiers
 * Syntax Highlighting for over 100 languages
 * Customizable tools
