@@ -33,7 +33,7 @@ The documentation is the also the focus of the releases since it is intended to 
 
 [You can visit here.](https://ptsource.eu/)
 
-[The forums home page.](https://forums.ptsource.eu/)
+[![The forums home page.](/images/button_join-the-forums.png)](https://forums.ptsource.eu/)
 
 [You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
