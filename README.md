@@ -31,7 +31,7 @@ The documentation is the also the focus of the releases since it is intended to 
 
 ## Support
 
-[You can visit here.](https://ptsource.eu/)
+[![Visit homepage.](/images/button_homepage.png)](https://ptsource.eu/)
 
 [![The forums home page.](/images/button_join-the-forums.png)](https://forums.ptsource.eu/)
 
