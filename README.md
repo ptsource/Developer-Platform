@@ -25,17 +25,15 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
-[You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
-
 ![Box Shot](/images/box.png)
+
+[![You can download here > 100mb.](/images/button_download-here.png)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ## Support
 
 [![Visit homepage.](/images/button_homepage.png)](https://ptsource.eu/)
 
 [![The forums home page.](/images/button_join-the-forums.png)](https://forums.ptsource.eu/)
-
-[You can download here > 100mb.](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ## You can see some videos bellow
 [Charts for databases with Harbour on the PTSource Developer Platform](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with Harbour on the PTSource Developer Platform")
