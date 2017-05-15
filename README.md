@@ -12,6 +12,8 @@ The documentation is the also the focus of the releases since it is intended to 
 * Linux Shell (with Lynx Browser included)
 * BCC C/C++ Compiler included
 * Harbour C/Cli Compiler included
+* Harbour C/Cli GUI Designer
+* Harbour C/Cli Lib Checker
 * FASM Compiler included
 * FreeBasic Compiler included
 * CHM Compiler included
