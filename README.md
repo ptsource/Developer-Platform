@@ -25,6 +25,7 @@ The documentation is the also the focus of the releases since it is intended to 
 * Converters (Asp2Php)
 * Debuggers (JSLint JavaScript Debugger)
 * Syntax Highlighting for over 100 languages
+* FTP Client
 * Customizable tools
 * 3D Browser
 * Screen recorder and screenshot taker
