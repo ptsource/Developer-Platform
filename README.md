@@ -2,8 +2,9 @@
 ## For Developers and Students
 PTSource Developer Platform is a professional source code editor, tools, templates, tutorials, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and over 100 languages including 3DMLX.
 
-
 The documentation is the also the focus of the releases since it is intended to increase interest in programming by students, making it enjoyble. You can contribute here with documentation and tools if you wish to do so.
+
+[![gitcheese.com](https://s3.amazonaws.com/gitcheese-ui-master/images/badge.svg)](https://www.gitcheese.com/donate/users/25940506/repos/83086438)
 
 ### Windows 10 ready and Linux supported via Wine
 
