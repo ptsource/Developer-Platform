@@ -15,11 +15,6 @@ The documentation is the also the focus of the releases since it is intended to 
 * Harbour C/Cli GUI Designer
 * Harbour C/Cli Lib Checker
 * FASM Compiler included
-* FreeBasic Compiler included
-* CHM Compiler included
-* PHP Winbinder Compiler included
-* Java Compiler included
-* Perl included
 * Macros
 * Sample code
 * Code beautifiers (C/CLI, HTML/XML, C++/PHP/JAVA)
