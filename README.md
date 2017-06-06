@@ -28,8 +28,6 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
-![Box Shot](/images/box.png)
-
 ![PTSource Developer Platform](/images/01.jpg)
 
 ![PTSource Developer Platform](/images/02.jpg)
@@ -37,6 +35,8 @@ The documentation is the also the focus of the releases since it is intended to 
 ![PTSource Developer Platform](/images/03.jpg)
 
 ![PTSource Developer Platform](/images/04.jpg)
+
+![Box Shot](/images/box.png)
 
 [![You can download here > 100mb.](/images/button_download-here.png)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
