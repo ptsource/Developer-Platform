@@ -8,7 +8,7 @@ The documentation is the also the focus of the releases since it is intended to 
 
 ### Windows 10 ready and Linux supported via Wine
 
-### Included 
+### Features 
 * Linux Shell (with Lynx Browser included)
 * BCC C/C++ Compiler included
 * Harbour C/Cli Compiler included
