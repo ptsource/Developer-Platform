@@ -1,6 +1,6 @@
 # PTSource Developer Platform
 ## For Developers and Students
-PTSource Developer Platform is a professional source code editor, tools, templates, tutorials, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and over 100 languages including 3DMLX.
+PTSource Developer Platform is a professional source code editor, tools, templates, tutorials, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and over 100 languages.
 
 The documentation is the also the focus of the releases since it is intended to increase interest in programming by students, making it enjoyble. You can contribute here with documentation and tools if you wish to do so.
 
@@ -23,7 +23,6 @@ The documentation is the also the focus of the releases since it is intended to 
 * Syntax Highlighting for over 100 languages
 * FTP Client
 * Customizable tools
-* 3D Browser
 * Screen recorder and screenshot taker
 * Documentation
 * ... and much more
@@ -56,7 +55,5 @@ The documentation is the also the focus of the releases since it is intended to 
 [Loading color schemes in PTSource Developer Platform](https://www.youtube.com/watch?v=EhvK0OCpORI "Loading color schemes in PTSource Developer Platform")
 
 [Beautify HTML5 and PHP with the PTSource Developer Platform](https://www.youtube.com/watch?v=VgTKkNsloyc "Beautify HTML5 and PHP with the PTSource Developer Platform")
-
-[3D Web Programming and Previewing in PTSource Developer Platform](https://www.youtube.com/watch?v=qdCmrF4XquQ "3D Web Programming and Previewing in PTSource Developer Platform")
 
 [Using the Linux Bash Shell in PTSource Developer Platform](https://www.youtube.com/watch?v=t9wYlzWTIzs "Using the Linux Bash Shell in PTSource Developer Platform")
