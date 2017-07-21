@@ -43,6 +43,8 @@ The documentation is the also the focus of the releases since it is intended to 
 
 [![Visit homepage.](/images/button_homepage.png)](https://ptsource.eu/)
 
+[![The forums home page.](/images/button_join-the-forums.png)](https://www.facebook.com/www.ptsource.eu/)
+
 ## You can see some videos bellow
 [Charts for databases with Harbour on the PTSource Developer Platform](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with Harbour on the PTSource Developer Platform")
 
