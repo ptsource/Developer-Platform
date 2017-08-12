@@ -27,7 +27,7 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
-![PTSource Developer Platform](/images/01.jpg=310x200)
+![PTSource Developer Platform](/images/01.jpg){ width=50% }
 
 ![PTSource Developer Platform](/images/02.jpg)
 
