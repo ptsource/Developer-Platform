@@ -4,8 +4,6 @@ PTSource Developer Platform is a professional source code editor, tools, templat
 
 The documentation is the also the focus of the releases since it is intended to increase interest in programming by students, making it enjoyble. You can contribute here with documentation and tools if you wish to do so.
 
-[![gitcheese.com](https://s3.amazonaws.com/gitcheese-ui-master/images/badge.svg)](https://www.gitcheese.com/donate/users/25940506/repos/83086438)
-
 ### Windows 10 ready and Linux supported via Wine
 
 ### Features 
