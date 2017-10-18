@@ -15,7 +15,7 @@ The documentation is the also the focus of the releases since it is intended to 
 * FASM Compiler included
 * Macros
 * Sample code
-* Code beautifiers (C/CLI, HTML/XML, C++/PHP/JAVA)
+* Code beautifiers (C/CLI, HTML5/XML, C++/PHP/JAVA)
 * Converters (Asp2Php)
 * Debuggers (JSLint JavaScript Debugger)
 * Syntax Highlighting for over 100 languages
