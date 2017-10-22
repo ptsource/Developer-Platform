@@ -27,6 +27,7 @@ The documentation is the also the focus of the releases since it is intended to 
 | BCC | Y | C/C++ |
 | FASM | Y | ASM |
 | Harbour | Y | C/Cli |
+| FreeBASIC | Y | QB/Basic |
 
 ![PTSource Developer Platform](/images/01.jpg)
 
