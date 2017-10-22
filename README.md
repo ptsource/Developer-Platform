@@ -25,6 +25,12 @@ The documentation is the also the focus of the releases since it is intended to 
 * Documentation
 * ... and much more
 
+## Compilers included current version updated 21/10/2017
+
+| Compiler  | Included | Language |
+| ------------- | ------------- | ------------- |  
+| BCC | Y | C/C++ |
+
 ![PTSource Developer Platform](/images/01.jpg)
 
 ![PTSource Developer Platform](/images/02.jpg)
