@@ -29,6 +29,8 @@ The documentation is the also the focus of the releases since it is intended to 
 | Harbour | Y | C/Cli |
 | FreeBASIC | Y | QB/Basic |
 
+## Screenshots
+
 ![PTSource Developer Platform](/images/01.jpg)
 
 ![PTSource Developer Platform](/images/02.jpg)
