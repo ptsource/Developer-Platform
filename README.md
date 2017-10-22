@@ -8,11 +8,8 @@ The documentation is the also the focus of the releases since it is intended to 
 
 ### Features 
 * Linux Shell (with Lynx Browser included)
-* BCC C/C++ Compiler included
-* Harbour C/Cli Compiler included
-* Harbour C/Cli GUI Designer
-* Harbour C/Cli Lib Checker
-* FASM Compiler included
+* C/Cli GUI Designer
+* C/Cli Lib Checker
 * Macros
 * Sample code
 * Code beautifiers (C/CLI, HTML5/XML, C++/PHP/JAVA)
@@ -21,8 +18,6 @@ The documentation is the also the focus of the releases since it is intended to 
 * Syntax Highlighting for over 100 languages
 * FTP Client
 * Customizable tools
-* Screen recorder and screenshot taker
-* Documentation
 * ... and much more
 
 ## Compilers included current version updated 21/10/2017
@@ -30,6 +25,8 @@ The documentation is the also the focus of the releases since it is intended to 
 | Compiler  | Included | Language |
 | ------------- | ------------- | ------------- |  
 | BCC | Y | C/C++ |
+| FASM | Y | ASM |
+| Harbour | Y | C/Cli |
 
 ![PTSource Developer Platform](/images/01.jpg)
 
