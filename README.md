@@ -4,8 +4,6 @@
 
 PTSource Developer Platform is a professional source code editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing over 100 languages.
 
-### Windows 10 ready and Linux supported via Wine
-
 ### Features 
 * Linux Shell (with Lynx Browser included)
 * C/Cli GUI Designer
