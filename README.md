@@ -44,16 +44,3 @@ PTSource Developer Platform is a professional source code editor, tools, templat
 [![Visit homepage.](/images/button_homepage.png)](https://ptsource.eu/)
 
 [![The forums home page.](/images/button_join-the-forums.png)](https://www.facebook.com/www.ptsource.eu/)
-
-## You can see some videos bellow
-[Charts for databases with Harbour on the PTSource Developer Platform](https://www.youtube.com/watch?v=8g-dEsh9xOs "Charts for databases with Harbour on the PTSource Developer Platform")
-
-[Bulding database applications with Harbour on PTSource Developer Platform](https://www.youtube.com/watch?v=qIYoQEYjyJ4 "Bulding database applications with Harbour on PTSource Developer Platform")
-
-[Making ASM applications with PTSource Developer Platform](https://www.youtube.com/watch?v=XcZSEpQ_B9k "Making ASM applications with PTSource Developer Platform")
-
-[Loading color schemes in PTSource Developer Platform](https://www.youtube.com/watch?v=EhvK0OCpORI "Loading color schemes in PTSource Developer Platform")
-
-[Beautify HTML5 and PHP with the PTSource Developer Platform](https://www.youtube.com/watch?v=VgTKkNsloyc "Beautify HTML5 and PHP with the PTSource Developer Platform")
-
-[Using the Linux Bash Shell in PTSource Developer Platform](https://www.youtube.com/watch?v=t9wYlzWTIzs "Using the Linux Bash Shell in PTSource Developer Platform")
