@@ -11,7 +11,7 @@ PTSource Developer Platform is a professional source code editor, tools, templat
 * Macros
 * Sample code
 * Code beautifiers (C/CLI, HTML5/XML, C++/PHP/JAVA)
-* Converters (Asp2Php)
+* Converters
 * Debuggers (JSLint JavaScript Debugger)
 * Syntax Highlighting for over 100 languages
 * FTP Client
