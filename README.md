@@ -29,13 +29,13 @@ PTSource Developer Platform is a professional source code editor, tools, templat
 
 ## Screenshots
 
-![PTSource Developer Platform](/images/01.jpg)
+![PTSource Developer Platform](/images/01.png)
 
-![PTSource Developer Platform](/images/02.jpg)
+![PTSource Developer Platform](/images/02.png)
 
-![PTSource Developer Platform](/images/03.jpg)
+![PTSource Developer Platform](/images/03.png)
 
-![PTSource Developer Platform](/images/04.jpg)
+![PTSource Developer Platform](/images/04.png)
 
 [![You can download here.](/images/button_download.png)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
