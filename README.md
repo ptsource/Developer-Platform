@@ -4,6 +4,8 @@ Computer programming is a process that leads from an original formulation of a c
 
 # PTSource Developer Platform
 
+### Current version 7.0 released 02/11/2017
+
 PTSource Developer Platform is a free professional source code editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing over 100 languages.
 
 ## Features 
@@ -21,7 +23,7 @@ PTSource Developer Platform is a free professional source code editor, tools, te
 * Customizable tools
 * ... and much more
 
-## Compilers included current version updated 21/10/2017
+## Compilers included current version
 
 | Compiler  | Included | Language |
 | ------------- | ------------- | ------------- |  
