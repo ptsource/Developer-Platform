@@ -1,4 +1,8 @@
-# Introduction to PTSource Developer Platform
+# Introduction to computer programming
+
+Computer programming is a process that leads from an original formulation of a computing problem to executable computer programs. Programming involves activities such as analysis, developing understanding, generating algorithms, verification of requirements of algorithms including their correctness and resources consumption, and implementation (commonly referred to as coding) of algorithms in a target programming language.
+
+# PTSource Developer Platform
 
 PTSource Developer Platform is a free professional source code editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing over 100 languages.
 
