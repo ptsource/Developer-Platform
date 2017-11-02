@@ -1,10 +1,9 @@
-# PTSource Developer Platform
+# Introduction to PTSource Developer Platform
 
-## For Developers and Students
+PTSource Developer Platform is a free professional source code editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing over 100 languages.
 
-PTSource Developer Platform is a professional source code editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing over 100 languages.
+## Features 
 
-### Features 
 * Linux Cygwin Shell (with Lynx Browser included)
 * C/Cli GUI Designer
 * C/Cli Lib Checker
