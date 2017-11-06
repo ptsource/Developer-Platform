@@ -6,6 +6,10 @@ Computer programming is a process that leads from an original formulation of a c
 
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()  [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-7.0-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
+## Screenshots
+![PTSource Developer Platform](/images/07.png)![PTSource Developer Platform](/images/02.png)![PTSource Developer Platform](/images/03.png)
+![PTSource Developer Platform](/images/04.png)![PTSource Developer Platform](/images/05.png)![PTSource Developer Platform](/images/06.png)
+
 ### Current version 7.0 released 02/11/2017
 
 PTSource Developer Platform is a free professional source code editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing over 100 languages.
@@ -33,10 +37,6 @@ PTSource Developer Platform is a free professional source code editor, tools, te
 | FASM | Y | ASM |
 | Harbour | Y | C/Cli |
 | FreeBASIC | Y | QB/Basic |
-
-## Screenshots
-![PTSource Developer Platform](/images/07.png)![PTSource Developer Platform](/images/02.png)![PTSource Developer Platform](/images/03.png)
-![PTSource Developer Platform](/images/04.png)![PTSource Developer Platform](/images/05.png)![PTSource Developer Platform](/images/06.png)
 
 [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
