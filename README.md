@@ -33,14 +33,8 @@ PTSource Developer Platform is a free professional source code editor, tools, te
 | FreeBASIC | Y | QB/Basic |
 
 ## Screenshots
-
-![PTSource Developer Platform](/images/01.png)
-
-![PTSource Developer Platform](/images/02.png)
-
-![PTSource Developer Platform](/images/03.png)
-
-![PTSource Developer Platform](/images/04.png)
+![PTSource Developer Platform](/images/07.png)![PTSource Developer Platform](/images/02.png)![PTSource Developer Platform](/images/03.png)
+![PTSource Developer Platform](/images/04.png)![PTSource Developer Platform](/images/05.png)![PTSource Developer Platform](/images/06.png)
 
 [![You can download here.](/images/button_download.png)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
