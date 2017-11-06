@@ -4,7 +4,7 @@ Computer programming is a process that leads from an original formulation of a c
 
 # PTSource Developer Platform
 
-[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()  [![Travis](/images/rust.svg)]()  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()  [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-7.0-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ### Current version 7.0 released 02/11/2017
 
