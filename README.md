@@ -4,7 +4,7 @@ Computer programming is a process that leads from an original formulation of a c
 
 # PTSource Developer Platform
 
-[![GitHub stars](https://img.shields.io/github/stars/ptsource/Developer-Platform.svg)](https://github.com/ptsource/Developer-Platform/stargazers)[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
+[![GitHub stars](https://img.shields.io/github/stars/ptsource/Developer-Platform.svg)](https://github.com/ptsource/Developer-Platform/stargazers)  [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 
 ### Current version 7.0 released 02/11/2017
 
