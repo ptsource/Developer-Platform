@@ -7,8 +7,9 @@ Computer programming is a process that leads from an original formulation of a c
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()  [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-7.0-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ## Screenshots
-![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/07.png)![PTSource Developer Platform](/images/02.png)![PTSource Developer Platform](/images/03.png)
-![PTSource Developer Platform](/images/04.png)![PTSource Developer Platform](/images/05.png)![PTSource Developer Platform](/images/06.png)
+
+![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/07.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.png)
+![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/05.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/06.png)
 
 ### Current version 7.0 released 02/11/2017
 
