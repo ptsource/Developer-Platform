@@ -4,6 +4,8 @@ Computer programming is a process that leads from an original formulation of a c
 
 # PTSource Developer Platform
 
+[![GitHub stars](https://img.shields.io/github/stars/ptsource/Developer-Platform.svg)](https://github.com/ptsource/Developer-Platform/stargazers)
+
 ### Current version 7.0 released 02/11/2017
 
 PTSource Developer Platform is a free professional source code editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing over 100 languages.
