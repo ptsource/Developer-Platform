@@ -5,6 +5,7 @@ The following example shows how to set up 'User Tools' to use LaTeX help file. W
 C:\texmf\doc\latex\help\LATEX2E.CHM
 1. Open Preferences dialog box and select User Tools page
 2. Select an empty slot and fill with the following arguments.
+
  * Menu Text: LaTeX Context Help
  * Command: C:\texmf\doc\latex\help\LATEX2E.CHM
  * Argument: $(CurrWord)
