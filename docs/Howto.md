@@ -12,4 +12,5 @@ C:\texmf\doc\latex\help\LATEX2E.CHM
 * Hot key: F1
 * Close on exit: Yes
 * Save before execute: No
+
 After that, you can press F1 to see the search index when the caret is on the word you want to look up.
