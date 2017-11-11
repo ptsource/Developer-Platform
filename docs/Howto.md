@@ -5,11 +5,11 @@ The following example shows how to set up 'User Tools' to use LaTeX help file. W
 C:\texmf\doc\latex\help\LATEX2E.CHM
 1. Open Preferences dialog box and select User Tools page
 2. Select an empty slot and fill with the following arguments.
-    - Menu Text: LaTeX Context Help
-    - Command: C:\texmf\doc\latex\help\LATEX2E.CHM
-    - Argument: $(CurrWord)
-    - Initial dir: $(FileDir)
-    - Hot key: F1
-    - Close on exit: Yes
-    - Save before execute: No
+ * Menu Text: LaTeX Context Help
+ * Command: C:\texmf\doc\latex\help\LATEX2E.CHM
+ * Argument: $(CurrWord)
+ * Initial dir: $(FileDir)
+ * Hot key: F1
+ * Close on exit: Yes
+ * Save before execute: No
 After that, you can press F1 to see the search index when the caret is on the word you want to look up.
