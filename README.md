@@ -45,3 +45,8 @@ PTSource Developer Platform is a free professional source code editor, tools, te
 
 [![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://www.facebook.com/www.ptsource.eu/)
 
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/ptsource/Developer-Platform/badge.svg?style=beer-square)](https://beerpay.io/ptsource/Developer-Platform)  [![Beerpay](https://beerpay.io/ptsource/Developer-Platform/make-wish.svg?style=flat-square)](https://beerpay.io/ptsource/Developer-Platform?focus=wish)
