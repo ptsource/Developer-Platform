@@ -4,12 +4,6 @@ Computer programming is a process that leads from an original formulation of a c
 
 # PTSource Developer Platform
 
-
-## Support on Beerpay
-Hey dude! Help us out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/ptsource/Developer-Platform/badge.svg?style=beer-square)](https://beerpay.io/ptsource/Developer-Platform)  [![Beerpay](https://beerpay.io/ptsource/Developer-Platform/make-wish.svg?style=flat-square)](https://beerpay.io/ptsource/Developer-Platform?focus=wish)
-
 [![Maintenance](/images/2017.svg)]() [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-7.0-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Docs](/images/docs-here-blue.svg)](/docs/)
 
 ## Screenshots
