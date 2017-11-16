@@ -19,6 +19,7 @@ PTSource Developer Platform is a free professional source code editor, tools, te
 
 * Linux Cygwin Shell (with Lynx Browser included)
 * GNU Midnight Commander
+* Cygwin apt-get (called pts-get)
 * C/Cli GUI RAD Designer
 * C/Cli Lib Checker
 * Macros
