@@ -9,7 +9,7 @@ Computer programming is a process that leads from an original formulation of a c
 ## Screenshots
 
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/07.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/06.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.png)
-![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/05.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.png)
+![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/40.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.png)
 
 ### Current version 7.0 released 02/11/2017
 
