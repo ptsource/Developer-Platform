@@ -34,12 +34,12 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 
 ## Compilers included current version
 
-| Compiler  | Included | Language | Language Forums |
+| Compiler  | Included | Language | Language Hmepage |
 | ------------- | ------------- | ------------- | ------------- |  
 | BCC | :+1: | C/C++ ||
 | FASM | :+1: | ASM ||
-| Harbour | :+1: | C/Cli ||
-| FreeBASIC | :+1: | QB/Basic | https://www.freebasic.net/forum/ |
+| Harbour | :+1: | C/Cli | https://harbour.github.io/ |
+| FreeBASIC | :+1: | QB/Basic | https://www.freebasic.net/ |
 | GCC | :+1: | C/C++ ||
 
 [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
