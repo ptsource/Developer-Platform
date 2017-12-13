@@ -36,11 +36,11 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 
 | Compiler  | Included | Language | References |
 | ------------- | ------------- | ------------- | ------------- |  
-| BCC | :+1: | C/C++ | http://www.cplusplus.com/ |
-| FASM | :+1: | ASM | https://flatassembler.net/ |
-| Harbour | :+1: | C/Cli | https://harbour.github.io/ |
-| FreeBASIC | :+1: | QB/Basic | https://www.freebasic.net/ |
-| GCC | :+1: | C/C++ | http://www.cplusplus.com/ |
+| BCC | :white_check_mark: | C/C++ | http://www.cplusplus.com/ |
+| FASM | :white_check_mark: | ASM | https://flatassembler.net/ |
+| Harbour | :white_check_mark: | C/Cli | https://harbour.github.io/ |
+| FreeBASIC | :white_check_mark: | QB/Basic | https://www.freebasic.net/ |
+| GCC | :white_check_mark: | C/C++ | http://www.cplusplus.com/ |
 
 [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
