@@ -11,7 +11,7 @@ Computer programming is a process that leads from an original formulation of a c
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/07.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/06.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.png)
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/40.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04.png)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.png)
 
-### Current version 7.0 released 02/11/2017
+### Current version 8.0 released 28/12/2017
 
 PTSource Developer Platform is a free professional IDE and Source Code Editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing for over 100 languages.
 
@@ -22,6 +22,7 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 * Cygwin apt-get (called pts-get)
 * C/Cli GUI RAD Designer
 * C/Cli Lib Checker
+* Complete Win API reference included
 * Macros
 * Sample code
 * Code beautifiers (C/CLI, HTML5/XML, C++/PHP/JAVA)
