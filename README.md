@@ -3,7 +3,7 @@
 Computer programming is a process that leads from an original formulation of a computing problem to executable computer programs. Programming involves activities such as analysis, developing understanding, generating algorithms, verification of requirements of algorithms including their correctness and resources consumption, and implementation (commonly referred to as coding) of algorithms in a target programming language.
 
 # PTSource Developer Platform
-### Current version 8.0 released 28/12/2017
+### Current version 8.0 released 28/12/2017 compiled and tested under Windows 10
 
 PTSource Developer Platform is a free professional IDE and Source Code Editor, tools, templates, converters, libs and compilers for professionals and students. It offers many powerful features for programming languages such as HTML5, CSS3, C/C++, Perl, PHP, Java and syntax highlighing for over 100 languages.
 
