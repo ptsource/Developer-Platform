@@ -42,14 +42,6 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 | FreeBASIC | :white_check_mark: | QB/Basic | https://www.freebasic.net/ |
 | GCC | :white_check_mark: | C/C++ | http://www.cplusplus.com/ |
 
-## Utilities included current version
-
-| Utility  | Included | References |
-| ------------- | ------------- | ------------- |  
-| Midnight Commander | :white_check_mark: | https://midnight-commander.org/ |
-| Cygwin | :white_check_mark: |  https://www.cygwin.com/ |
-| JSLint | :white_check_mark: |  http://www.jslint.com/ |
-
 [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ## Support
