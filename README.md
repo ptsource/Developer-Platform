@@ -43,6 +43,7 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 | Harbour | :white_check_mark: | C/Cli | https://harbour.github.io/ |
 | FreeBASIC | :white_check_mark: | QB/Basic | https://www.freebasic.net/ |
 | GCC | :white_check_mark: | C/C++ | http://www.cplusplus.com/ |
+| TCC | :white_check_mark: | C/C++ | http://www.cplusplus.com/ |
 
 [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
