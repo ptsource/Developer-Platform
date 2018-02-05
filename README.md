@@ -49,4 +49,4 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 
 ## Support
 
-[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://www.facebook.com/www.ptsource.eu/)
+[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://www.ptsource.eu/)
