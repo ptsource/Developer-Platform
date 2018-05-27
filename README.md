@@ -30,12 +30,7 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 * Customizable tools
 * ... and much more
 
-## Compilers included current version
-
-| Compiler  | Included | Language | 
-| ------------- | ------------- | ------------- | 
-| BCC | :white_check_mark: | C/C++ | 
-| C/CLI | :white_check_mark: | C/CLI | 
+## Download
 
 [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
