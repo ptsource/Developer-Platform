@@ -16,12 +16,10 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 
 ## Features 
 
-* Linux Cygwin Shell (with Lynx Browser included)
-* GNU Midnight Commander
-* Cygwin apt-get (called pts-get)
-* C/Cli GUI RAD Designer
-* C/Cli Lib Checker
-* Complete Win API reference included
+* Bash Shell
+* GUI RAD Designer
+* Lib Checker
+* Project Manager
 * Macros
 * Sample code
 * Code beautifiers (C/CLI, HTML5/XML, C++/PHP/JAVA)
@@ -29,21 +27,15 @@ PTSource Developer Platform is a free professional IDE and Source Code Editor, t
 * Debuggers (JSLint JavaScript Debugger)
 * Syntax Highlighting for over 100 languages
 * FTP Client
-* Putty Term
-* Dos-Box SVN with network support
 * Customizable tools
 * ... and much more
 
 ## Compilers included current version
 
-| Compiler  | Included | Language | References |
-| ------------- | ------------- | ------------- | ------------- |  
-| BCC | :white_check_mark: | C/C++ | http://www.cplusplus.com/ |
-| FASM | :white_check_mark: | ASM | https://flatassembler.net/ |
-| Harbour | :white_check_mark: | C/Cli | https://harbour.github.io/ |
-| FreeBASIC | :white_check_mark: | QB/Basic | https://www.freebasic.net/ |
-| GCC | :white_check_mark: | C/C++ | http://www.cplusplus.com/ |
-| TCC | :white_check_mark: | C/C++ | http://www.cplusplus.com/ |
+| Compiler  | Included | Language | 
+| ------------- | ------------- | ------------- | 
+| BCC | :white_check_mark: | C/C++ | 
+| C/CLI | :white_check_mark: | C/CLI | 
 
 [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
