@@ -30,6 +30,14 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Customizable tools
 * ... and much more
 
+## Compilers Embeded
+
+| Compiler  | Language | x86-x64 | 
+| ------------- | ------------- | ------------- | 
+| PTSource Native | C/CLI | :white_check_mark: |
+| MinGW-w64 |  C/C++ | :white_check_mark: | 
+| TCC |  C/C++  | :white_check_mark: |
+
 ## Download
 
 [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
