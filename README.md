@@ -7,7 +7,7 @@ Computer programming is a process that leads from an original formulation of a c
 
 PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students. It offers many powerful features for programming languages and syntax highlighing for over 100 languages.
 
-[![Maintenance](/images/2017.svg)]() [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-12-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/)
+[![Maintenance](/images/2017.svg)]() [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-12-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/)[![Donate here.](/images/donate.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D3EH7N735BVVW)
 
 ## Screenshots
 
