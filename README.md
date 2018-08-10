@@ -18,6 +18,8 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 * MinGW-w64
 * PTSource Bash Shell
+* Build Environments for Win32 and Win64
+* XBase portable code
 * GUI RAD Designer
 * TCC
 * Premake5
