@@ -14,7 +14,10 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/01.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.PNG)
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/05.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/06.PNG)
 
-## Features 
+## Features
+
+
+PTSource Native binaries are based on Harbour. Harbour is the open/free software implementation of a cross-platform, multi-threading, object-oriented, scriptable programming language, backwards compatible with xBase languages. Harbour consists of a compiler and runtime libraries with multiple UI, database and I/O backends, its own build system and a collection of libraries and bindings for popular APIs. With Harbour, you can build apps running on GNU/Linux, Windows (32/64-bit), macOS, iOS, Android, *BSD, *nix, and more.
 
 * PTSource Native Cross-Platform Binaries based on [Harbour](https://harbour.github.io/)
 * [MinGW-w64](http://mingw-w64.org/)
@@ -33,7 +36,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Customizable tools
 * ... and much more
 
-## Compilers Embeded
+## Compilers Embedded
 
 | Compiler  | Language | x86 |  x64 | Portable |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
