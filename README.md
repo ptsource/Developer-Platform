@@ -7,6 +7,8 @@ Computer programming is a process that leads from an original formulation of a c
 
 PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students. It offers many powerful features for programming languages and syntax highlighing for over 100 languages. It already brings integrates Harbour, MingGW-w64 and TCC as native compilers but supports a wide variety of compilers and assemblers.
 
+PTSource Native binaries are based on Harbour. Harbour is the open/free software implementation of a cross-platform, multi-threading, object-oriented, scriptable programming language, backwards compatible with xBase languages. Harbour consists of a compiler and runtime libraries with multiple UI, database and I/O backends, its own build system and a collection of libraries and bindings for popular APIs. With Harbour, you can build apps running on GNU/Linux, Windows (32/64-bit), macOS, iOS, Android, *BSD, *nix, and more.
+
 [![Maintenance](/images/2017.svg)]() [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-15-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/) [![Donate here.](/images/donate.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D3EH7N735BVVW)
 
 ## Screenshots
@@ -15,9 +17,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/05.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/06.PNG)
 
 ## Features
-
-
-PTSource Native binaries are based on Harbour. Harbour is the open/free software implementation of a cross-platform, multi-threading, object-oriented, scriptable programming language, backwards compatible with xBase languages. Harbour consists of a compiler and runtime libraries with multiple UI, database and I/O backends, its own build system and a collection of libraries and bindings for popular APIs. With Harbour, you can build apps running on GNU/Linux, Windows (32/64-bit), macOS, iOS, Android, *BSD, *nix, and more.
 
 * PTSource Native Cross-Platform Binaries based on [Harbour](https://harbour.github.io/)
 * [MinGW-w64](http://mingw-w64.org/)
