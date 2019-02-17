@@ -50,5 +50,3 @@ PTSource Native binaries are based on Harbour. Harbour is the open/free software
 ## Support
 
 [![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://www.ptsource.eu/)
-
-[![Visit homepage.](https://status.ptsource.eu/github-platform.gif)](https://www.ptsource.eu/)
