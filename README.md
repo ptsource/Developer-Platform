@@ -23,7 +23,6 @@ PTSource Native binaries are based on Harbour. Harbour is the open/free software
 * [PTSource Bash Shell](https://wiki.ptsource.eu/doku.php?id=software:platform:shell)
 * Build Environments for x86 and x64
 * XBase portable code
-* [GUI RAD Designer](https://wiki.ptsource.eu/doku.php?id=software:platform:designer)
 * TCC Embedded
 * [Premake5](https://github.com/premake/premake-core)
 * Project Manager
