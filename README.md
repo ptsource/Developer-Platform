@@ -18,7 +18,7 @@ PTSource Native binaries are based on Harbour. Harbour is the open/free software
 
 ## Features
 
-* PTSource Native Cross-Platform Binaries based on [Harbour](https://harbour.github.io/)
+* [Harbour](https://harbour.github.io/)
 * [MinGW-w64](http://mingw-w64.org/)
 * [PTSource Bash Shell](https://wiki.ptsource.eu/doku.php?id=software:platform:shell)
 * Build Environments for x86 and x64
@@ -38,7 +38,7 @@ PTSource Native binaries are based on Harbour. Harbour is the open/free software
 
 | Compiler  | Language | x86 |  x64 | Portable |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| PTSource Native (Harbour)| C/CLI | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Harbour | C/CLI | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 
