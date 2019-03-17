@@ -41,6 +41,7 @@ Harbour is the open/free software implementation of a cross-platform, multi-thre
 | Harbour | C/CLI | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
+| FASM |  ASM  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 
 ## Download
 
