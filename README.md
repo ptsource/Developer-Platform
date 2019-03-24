@@ -34,6 +34,14 @@ Harbour is the open/free software implementation of a cross-platform, multi-thre
 * Customizable tools
 * ... and much more
 
+## Shell Interpreters Included
+
+| Interpreter  | 
+| ------------- | 
+| PHP | 
+| Perl | 
+| Tcl/TK | 
+
 ## Compilers Embedded
 
 | Compiler  | Language | x86 |  x64 | Portable |
