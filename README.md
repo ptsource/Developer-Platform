@@ -28,7 +28,7 @@ The PTSource Shell provides native integration of Windows-based applications, da
 
 * [Harbour](https://harbour.github.io/)
 * [MinGW-w64](http://mingw-w64.org/)
-* [PTSource Bash Shell](https://wiki.ptsource.eu/doku.php?id=software:platform:shell)
+* [PTSource Shell](https://wiki.ptsource.eu/doku.php?id=software:platform:shell)
 * Build Environments for x86 and x64
 * XBase portable code
 * TCC Embedded
