@@ -11,6 +11,14 @@ Harbour is the open/free software implementation of a cross-platform, multi-thre
 
 [![Maintenance](/images/2017.svg)]() [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-16-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/) [![Donate here.](/images/donate.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D3EH7N735BVVW)
 
+## Integrated PTSource Shell
+
+The PTSource Shell is a Unix-compatible environment that runs natively on Microsoft Windows. Its goal is to allow programs of Unix-like systems to be recompiled and run natively on Windows with minimal source code modifications by providing them with the same underlying API they would expect in those systems.
+
+The PTSource Shell installation directory behaves like the root and follows a similar directory layout to that found in Unix-like systems, with familiar directories like /bin, /home, /etc, /usr, /var available within it, and includes by default hundreds of programs and command-line tools commonly found in the Unix world.
+
+The PTSource Shell provides native integration of Windows-based applications, data, and other system resources with applications, software tools, and data of the Unix-like environment. Thus it is possible to launch Windows applications from the PTSource Shell environment, as well as to use PTSource Shell tools and applications within the Windows operating context.
+
 ## Screenshots
 
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/01.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.PNG)
