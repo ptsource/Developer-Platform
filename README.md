@@ -31,7 +31,8 @@ The PTSource Shell provides native integration of Windows-based applications, da
 * [PTSource Shell](https://wiki.ptsource.eu/doku.php?id=software:platform:shell)
 * Build Environments for x86 and x64
 * XBase portable code
-* TCC Embedded
+* FASM
+* TCC
 * [Premake5](https://github.com/premake/premake-core)
 * Project Manager
 * Macros
