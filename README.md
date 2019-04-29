@@ -50,6 +50,7 @@ The PTSource Shell provides native integration of Windows-based applications, da
 | PHP | 
 | Perl | 
 | Tcl/TK | 
+| Python | 
 
 ## Compilers Embedded
 
