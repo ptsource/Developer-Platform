@@ -60,7 +60,7 @@ The PTSource Shell provides native integration of Windows-based applications, da
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | FASM |  ASM  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
-| PHP-HUM |  PHP  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
+| PHP-HUM |  PHP  | :white_check_mark: |  :white_check_mark: | :x: |
 
 ## Download
 
