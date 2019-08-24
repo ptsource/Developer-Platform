@@ -3,7 +3,7 @@
 Computer programming is a process that leads from an original formulation of a computing problem to executable computer programs. Programming involves activities such as analysis, developing understanding, generating algorithms, verification of requirements of algorithms including their correctness and resources consumption, and implementation (commonly referred to as coding) of algorithms in a target programming language.
 
 # PTSource Developer Platform
-### Current version 18 released 07/08/2019 compiled and tested under Windows 10
+### Current version 18 released 24/08/2019 compiled and tested under Windows 10
 
 PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students. It offers many powerful features for programming languages and syntax highlighing for over 100 languages. It already brings integrates Harbour, MingGW-w64, TCC and FASM as native compilers but supports a wide variety of compilers and assemblers.
 
@@ -52,6 +52,7 @@ The PTSource Shell provides native integration of Windows-based applications, da
 | Perl | 
 | Tcl/TK | 
 | Python | 
+| JS SpiderMonkey |
 
 ## Compilers Embedded
 
@@ -61,6 +62,7 @@ The PTSource Shell provides native integration of Windows-based applications, da
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | FASM |  ASM  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
+| Java |  Java  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | PTSource PHP-HUM |  PHP  | :white_check_mark: |  :x: | :white_check_mark: |
 
 ## Download
