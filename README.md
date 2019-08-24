@@ -28,8 +28,8 @@ The PTSource Shell provides native integration of Windows-based applications, da
 
 * [Harbour](https://harbour.github.io/)
 * [MinGW-w64](http://mingw-w64.org/)
-* [PTSource Shell](https://wiki.ptsource.eu/doku.php?id=software:platform:shell)
-* [PTSource PHP-HUM](https://ptsource.github.io/PHP-HUM/)
+* [PTSource Shell](https://wiki.ptsource.eu/software/platform/shell)
+* [PTSource PHP-HUM](https://wiki.ptsource.eu/software/phphum/start)
 * Build Environments for x86 and x64
 * XBase portable code
 * FASM
