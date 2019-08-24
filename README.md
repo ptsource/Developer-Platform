@@ -35,6 +35,8 @@ The PTSource Shell provides native integration of Windows-based applications, da
 * FASM
 * TCC
 * [Premake5](https://github.com/premake/premake-core)
+* NSIS Install Maker
+* PHP Obfuscator
 * Project Manager
 * Macros
 * Sample code
