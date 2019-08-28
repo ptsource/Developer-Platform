@@ -9,7 +9,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 Harbour is the open/free software implementation of a cross-platform, multi-threading, object-oriented, scriptable programming language, backwards compatible with xBase languages. Harbour consists of a compiler and runtime libraries with multiple UI, database and I/O backends, its own build system and a collection of libraries and bindings for popular APIs. With Harbour, you can build apps running on GNU/Linux, Windows (32/64-bit), macOS, iOS, Android, *BSD, *nix, and more.
 
-[![Maintenance](/images/maintained.svg)]() [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-18-red.svg)](https://wiki.ptsource.eu/software/downloads)  [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/software/downloads) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/)
+[![Maintenance](/images/maintained.svg)]() [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-18-red.svg)](https://wiki.ptsource.eu/software/downloads)  [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/software/downloads) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/software/platform/start)
 
 ## Integrated PTSource Shell
 
