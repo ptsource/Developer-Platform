@@ -73,4 +73,4 @@ The PTSource Shell provides native integration of Windows-based applications, da
 
 ## Support
 
-[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://www.ptsource.eu/)
+[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://wiki.ptsource.eu/)
