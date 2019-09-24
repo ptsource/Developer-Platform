@@ -13,7 +13,7 @@ Harbour is the open/free software implementation of a cross-platform, multi-thre
 
 ## Integrated PTSource Shell
 
-The PTSource Shell is a Unix-compatible environment that runs natively on Microsoft Windows. Its goal is to allow programs of Unix-like systems to be recompiled and run natively on Windows with minimal source code modifications by providing them with the same underlying API they would expect in those systems.
+The PTSource Shell is a Unix Programming Environment compatible environment that runs natively on Microsoft Windows. Its goal is to allow programs of Unix-like systems to be recompiled and run natively on Windows with minimal source code modifications by providing them with the same underlying API they would expect in those systems.
 
 The PTSource Shell installation directory behaves like the root and follows a similar directory layout to that found in Unix-like systems, with familiar directories like /bin, /home, /etc, /usr, /var available within it, and includes by default hundreds of programs and command-line tools commonly found in the Unix world.
 
