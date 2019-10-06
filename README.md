@@ -17,6 +17,24 @@ The PTSource Shell installation directory behaves like the root and follows a si
 
 The PTSource Shell provides native integration of Windows-based applications, data, and other system resources with applications, software tools, and data of the Unix-like environment. Thus it is possible to launch Windows applications from the PTSource Shell environment, as well as to use PTSource Shell tools and applications within the Windows operating context.
 
+## Integrated PHP-HUM
+
+PHP-HUM (Hummingbird) is a set of PHP extensions that allows PHP programmers to build native Windows applications. It wraps Windows APIS in a lightweight manner making all easy-to-use, so that program creation is simple and fun. It allows PHP programmers to easily build native Windows applications, producing quick and rewarding results with minimum effort. Even short scripts with a few dozen lines can generate a useful program, thanks to the power and flexibility of PHP.
+
+### PHP-HUM Advantages
+
+* Access to the vast range of existing PHP functions and extensions.
+* A small set of functions encapsulates many complex aspects of the Windows API .
+* Provides 100% native Windows classes and controls.
+* Interfaces directly to the Window API. This means fast execution, no extra libraries and no installation required.
+* Supports both procedural and object-oriented programming models.
+* High performance, compares favorably to most scripting languages.
+* Produces standalone applications that can be easily installed and removed with no reboot.
+* Small footprint.
+* A database-independent framework allows easy coding (no SQL knowledge is necessary) .
+* No database server required if using SQLite.
+* Does not need to use to the Windows registry, but may use it if necessary.
+
 ## Screenshots
 
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/01.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.PNG)
