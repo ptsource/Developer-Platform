@@ -3,7 +3,7 @@
 Computer programming is a process that leads from an original formulation of a computing problem to executable computer programs. Programming involves activities such as analysis, developing understanding, generating algorithms, verification of requirements of algorithms including their correctness and resources consumption, and implementation (commonly referred to as coding) of algorithms in a target programming language.
 
 # PTSource Developer Platform
-### Current version 18 released 24/08/2019 compiled and tested under Windows 10
+### Current version 18 released 20/10/2019 compiled and tested under Windows 10
 
 PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students. It offers many powerful features for programming languages and syntax highlighing for over 100 languages. It already brings integrates Harbour, MingGW-w64, TCC and FASM as native compilers but supports a wide variety of compilers and assemblers.
 
@@ -38,6 +38,7 @@ PTSource PHP-HUM (Hummingbird) is a set of PHP extensions that allows PHP progra
 * FASM
 * TCC
 * [Premake5](https://github.com/premake/premake-core)
+* [CPPCheck](http://cppcheck.sourceforge.net/)
 * NSIS Install Maker
 * PHP Obfuscator
 * Project Manager
