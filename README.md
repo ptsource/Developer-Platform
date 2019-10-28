@@ -48,6 +48,11 @@ PTSource PHP-HUM (Hummingbird) is a set of PHP extensions that allows PHP progra
 * Syntax Highlighting for over 100 languages
 * FTP Client
 * Customizable tools
+* Column markers
+* Bookmarks
+* Search and replace with regular expressions
+* Search and replace in multiple files
+* Supports calling external tools
 * ... and much more
 
 ## Shell Interpreters Included
