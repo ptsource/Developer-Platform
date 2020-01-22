@@ -9,19 +9,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 [![Maintenance](/images/maintained.svg)]() [![Travis](/images/rust.svg)]()  [![You can download here.](/images/version-18-red.svg)](https://wiki.ptsource.eu/software/downloads)  [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/software/downloads) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/software/platform/start)
 
-## Integrated PTSource Shell
-
-PTSource Shell is a Unix Programming Environment compatible environment that runs natively on Microsoft Windows. Its goal is to allow programs of Unix-like systems to be recompiled and run natively on Windows with minimal source code modifications by providing them with the same underlying API they would expect in those systems.
-
-PTSource Shell installation directory behaves like the root and follows a similar directory layout to that found in Unix-like systems, with familiar directories like /bin, /home, /etc, /usr, /var available within it, and includes by default hundreds of programs and command-line tools commonly found in the Unix world.
-
-PTSource Shell provides native integration of Windows-based applications, data, and other system resources with applications, software tools, and data of the Unix-like environment. Thus it is possible to launch Windows applications from the PTSource Shell environment, as well as to use PTSource Shell tools and applications within the Windows operating context.
-
-## Integrated PTSource PHP-HUM
-
-PTSource PHP-HUM (Hummingbird) is a set of PHP extensions that allows PHP programmers to build native Windows applications. It wraps Windows APIS in a lightweight manner making all easy-to-use, so that program creation is simple and fun. It allows PHP programmers to easily build native Windows applications, producing quick and rewarding results with minimum effort. Even short scripts with a few dozen lines can generate a useful program, thanks to the power and flexibility of PHP.
-
-
 ## Screenshots
 
 ![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/01.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.PNG)![PTSource Developer Platform](https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.PNG)
