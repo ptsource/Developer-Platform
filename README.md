@@ -65,7 +65,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 ## Download
 
-[![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/software/downloads)
+[![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ## Support
 
