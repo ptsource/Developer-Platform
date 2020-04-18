@@ -16,9 +16,9 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 ## Features 
 
-* [Harbour](https://harbour.github.io/)
-* GUI Designer for [Harbour](https://harbour.github.io/)
-* Resource Editor for [Harbour](https://harbour.github.io/)
+* [HarbourMG](https://harbour.github.io/)
+* GUI Designer for [HarbourMG](https://harbour.github.io/)
+* Resource Editor for [HarbourMG](https://harbour.github.io/)
 * [MinGW-w64](http://mingw-w64.org/)
 * [PTSource Shell](https://wiki.ptsource.eu/software/platform/ptshell)
 * [PTSource PHP-HUM](https://wiki.ptsource.eu/software/phphum/start)
@@ -48,6 +48,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 | Interpreter  | 
 | ------------- | 
+| [PTSource VRGrid](https://wiki.ptsource.eu/software/vrgrid/start) |
 | PHP | 
 | Perl | 
 | Tcl/TK | 
@@ -59,11 +60,11 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 | Compiler  | Language | x86 |  x64 | Portable |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Harbour | C/CLI | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| HarbourMG | C/CLI | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | FASM |  ASM  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
-| PTSource PHP-HUM |  PHP  | :white_check_mark: |  :x: | :white_check_mark: |
+| [PTSource PHP-HUM](https://wiki.ptsource.eu/software/phphum/start) |  PHP  | :white_check_mark: |  :x: | :white_check_mark: |
 
 ## Download
 
