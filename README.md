@@ -52,6 +52,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 | Perl | 
 | Tcl/TK | 
 | Python | 
+| Java |
 | JS SpiderMonkey |
 
 ## Compilers Embedded
@@ -62,7 +63,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | FASM |  ASM  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
-| Java |  Java  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | PTSource PHP-HUM |  PHP  | :white_check_mark: |  :x: | :white_check_mark: |
 
 ## Download
