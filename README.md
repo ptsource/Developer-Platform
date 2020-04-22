@@ -17,8 +17,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 ## Features 
 
 * [HarbourMG](https://harbour.github.io/)
-* GUI Designer for [HarbourMG](https://harbour.github.io/)
-* Resource Editor for [HarbourMG](https://harbour.github.io/)
 * [MinGW-w64](http://mingw-w64.org/)
 * [PTSource Shell](https://wiki.ptsource.eu/software/platform/ptshell)
 * [PTSource PHP-HUM](https://wiki.ptsource.eu/software/phphum/start)
