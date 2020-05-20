@@ -51,7 +51,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 | Perl | 
 | Tcl/TK | 
 | Python | 
-| Java |
 | JS SpiderMonkey |
 
 ## Compilers Embedded
