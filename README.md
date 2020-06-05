@@ -27,7 +27,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [Premake5](https://github.com/premake/premake-core)
 * [CPPCheck](http://cppcheck.sourceforge.net/)
 * NSIS Install Maker
-* PHP Obfuscator
 * Project Manager
 * Macros
 * Sample code
