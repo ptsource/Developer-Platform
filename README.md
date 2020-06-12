@@ -18,8 +18,8 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 * [HarbourMG](https://harbour.github.io/)
 * [MinGW-w64](http://mingw-w64.org/)
-* [PTSource Shell](https://wiki.ptsource.eu/software/platform/ptshell)
-* [PTSource PHP-HUM](https://wiki.ptsource.eu/software/phphum/start)
+* [Shell](https://wiki.ptsource.eu/software/platform/ptshell)
+* [PHP-HUM](https://wiki.ptsource.eu/software/phphum/start)
 * Build Environments for 32-bits and 64-bits
 * XBase portable code
 * FASM
