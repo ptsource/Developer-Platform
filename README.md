@@ -44,7 +44,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Supports calling external tools
 * ... and much more
 
-## Shell Interpreters Included
+## Interpreters Included
 
 | Interpreter  | 
 | ------------- | 
