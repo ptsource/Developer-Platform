@@ -24,6 +24,8 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * XBase portable code
 * FASM
 * TCC
+* FreeBasic
+* FreePascal
 * [Premake5](https://github.com/premake/premake-core)
 * [CPPCheck](http://cppcheck.sourceforge.net/)
 * NSIS Install Maker
@@ -33,6 +35,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Code beautifiers
 * Syntax Highlighting for over 100 languages
 * FTP Client
+* GIT
 * Customizable tools
 * Column markers
 * Bookmarks
