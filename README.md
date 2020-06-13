@@ -22,10 +22,10 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [PHP-HUM](https://wiki.ptsource.eu/software/phphum/start)
 * Build Environments for 32-bits and 64-bits
 * XBase portable code
-* FASM
+* [FASM](https://flatassembler.net/)
 * TCC
-* FreeBasic
-* FreePascal
+* [FreeBasic](https://www.freebasic.net/)
+* [FreePascal](https://www.freepascal.org/)
 * [Premake5](https://github.com/premake/premake-core)
 * [CPPCheck](http://cppcheck.sourceforge.net/)
 * NSIS Install Maker
