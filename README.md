@@ -21,7 +21,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [Bash Shell](https://wiki.ptsource.eu/software/platform/ptshell)
 * [PHP-HUM](https://wiki.ptsource.eu/software/phphum/start)
 * Build Environments for x86 and x64
-* XBase portable code
 * [FASM](https://flatassembler.net/)
 * TCC
 * [FreeBasic](https://www.freebasic.net/)
