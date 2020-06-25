@@ -28,7 +28,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [FreePascal](https://www.freepascal.org/)
 * [Premake5](https://github.com/premake/premake-core)
 * [CPPCheck](http://cppcheck.sourceforge.net/)
-* [NodeJS](https://nodejs.org/en/)
+* [NodeJS](https://nodejs.org/)
 * NSIS Install Maker
 * [VRGrid](https://wiki.ptsource.eu/software/vrgrid/start)
 * Project Manager
