@@ -11,7 +11,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/01.PNG" width="33%"><img src="(https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.PNG" width="33%">
+<img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/01.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.PNG" width="33%">
 <img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/05.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/06.PNG" width="33%">
 
 ## Features 
