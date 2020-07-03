@@ -5,7 +5,7 @@ Computer programming is a process that leads from an original formulation of a c
 # PTSource Developer Platform
 ### Current version 19 released 25/06/2020 for Windows
 
-PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students with build environments for Windows x86 and x64. It offers many powerful features for programming and syntax highlighing for over 100 languages. It already brings Harbour, MingGW-w64, TCC, FASM, FreeBasic and FreePascal as native compilers, PHP, Perl, Tcl/TK, NodeJS and Python as interpreters and Git as its version control system but supports a wide variety of compilers, assemblers and interpreters.
+PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students with build environments for Windows x32 and x64. It offers many powerful features for programming and syntax highlighing for over 100 languages. It already brings Harbour, MingGW-w64, TCC, FASM, FreeBasic and FreePascal as native compilers, PHP, Perl, Tcl/TK, NodeJS and Python as interpreters and Git as its version control system but supports a wide variety of compilers, assemblers and interpreters.
 
 [![Maintenance](/images/maintained.svg)]()  [![You can download here.](/images/version-19-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/software/platform/start)
 
@@ -61,7 +61,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 ## Compilers Included
 
-| Compiler  | Language | x86 | x64 | Portable |
+| Compiler  | Language | x32 | x64 | Portable |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | HarbourMG | C/CLI | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
