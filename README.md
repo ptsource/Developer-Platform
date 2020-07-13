@@ -17,16 +17,16 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 ## Features 
 
 * [PTSource Shell](https://wiki.ptsource.eu/software/platform/ptshell)
-* [HarbourMG](https://harbour.github.io/)
-* [MinGW-w64](http://mingw-w64.org/)
+* HarbourMG
+* MinGW-w64
 * [PHP-HUM](https://wiki.ptsource.eu/software/phphum/start)
-* [FASM](https://flatassembler.net/)
+* FASM
 * TCC
-* [FreeBasic](https://www.freebasic.net/)
-* [FreePascal](https://www.freepascal.org/)
-* [Premake5](https://github.com/premake/premake-core)
-* [CPPCheck](http://cppcheck.sourceforge.net/)
-* [NodeJS](https://nodejs.org/)
+* FreeBasic
+* FreePascal
+* Premake5
+* CPPCheck
+* NodeJS
 * NSIS Install Maker
 * NodeJS & NPM
 * Python & PIP
