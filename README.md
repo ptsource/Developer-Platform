@@ -26,7 +26,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * FreePascal
 * Premake5
 * CPPCheck
-* NodeJS
 * NSIS Install Maker
 * NodeJS & NPM
 * Python & PIP
