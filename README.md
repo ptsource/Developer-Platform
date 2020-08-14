@@ -7,7 +7,7 @@ Computer programming is a process that leads from an original formulation of a c
 
 PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students with build environments for Windows x86 and x64. It offers many powerful features for programming and syntax highlighing for over 100 languages. It already brings Harbour, MingGW-w64, TCC, FASM, FreeBasic and FreePascal as native compilers, PHP, Perl, Tcl/TK, NodeJS and Python as interpreters and Git as its version control system but supports a wide variety of compilers, assemblers and interpreters.
 
-[![Maintenance](/images/maintained.svg)]()  [![You can download here.](/images/version-19-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/software/platform/start)
+[![Maintenance](/images/maintained.svg)]()  [![You can download here.](/images/version-19-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/platform/start)
 
 ## Screenshots
 
@@ -32,7 +32,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * PHP
 * Perl
 * Tcl/Tk
-* [VRGrid](https://wiki.ptsource.eu/software/vrgrid/start)
+* [VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start)
 * Project Manager
 * Macros
 * Sample code
@@ -51,7 +51,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 | Interpreter  | 
 | ------------- | 
-| [VRGrid](https://wiki.ptsource.eu/software/vrgrid/start) |
+| [VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start) |
 | PHP | 
 | Perl | 
 | Tcl/TK | 
@@ -76,4 +76,4 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 ## Support
 
-[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://wiki.ptsource.eu/software/platform/start)
+[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://wiki.ptsource.eu/soft/platform/start)
