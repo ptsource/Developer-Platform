@@ -22,8 +22,8 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start)
 * FASM
 * TCC
-* FB
-* FP
+* FreeBasic
+* FreePascal
 * Premake5
 * CPPCheck
 * NSIS Install Maker
@@ -66,8 +66,8 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: | 5.3.0 |
 | TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |  0.9.22 |
 | FASM |  ASM  | :white_check_mark: |  :white_check_mark: | :white_check_mark: | 1.73.09 |
-| FB |  Basic  | :white_check_mark: | :white_check_mark: | :white_check_mark: | 1.0.7 |
-| FP |  Pascal  | :white_check_mark: | :x: | :white_check_mark: | 3.0.4 |
+| FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | :white_check_mark: | 1.0.7 |
+| FreePascal |  Pascal  | :white_check_mark: | :x: | :white_check_mark: | 3.0.4 |
 | [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start) |  PHP  | :white_check_mark: |  :x: | :white_check_mark: | 5.6.40 |
 
 ## Download
