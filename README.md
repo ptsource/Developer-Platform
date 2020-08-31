@@ -5,7 +5,7 @@ Computer programming is a process that leads from an original formulation of a c
 # PTSource Developer Platform
 ### Current version 19 released 11/08/2020 for Windows
 
-PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students with build environments for Windows x86 and x64. It offers many powerful features for programming and syntax highlighing for over 100 languages. It already brings Harbour, MingGW-w64, TCC, FASM, FreeBasic and FreePascal as native compilers, PHP, Perl, Tcl/TK, NodeJS and Python as interpreters and Git as its version control system but supports a wide variety of compilers, assemblers and interpreters.
+PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students with build environments for Windows x86 and x64. It offers many powerful features for programming and syntax highlighing for over 100 languages. It already brings Harbour, MingGW-w64, TCC, FASM, FB and FP as native compilers, PHP, Perl, Tcl/TK, NodeJS and Python as interpreters and Git as its version control system but supports a wide variety of compilers, assemblers and interpreters.
 
 [![Maintenance](/images/maintained.svg)]()  [![You can download here.](/images/version-19-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/platform/start)
 
@@ -22,8 +22,8 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start)
 * FASM
 * TCC
-* FreeBasic
-* FreePascal
+* FB
+* FP
 * Premake5
 * CPPCheck
 * NSIS Install Maker
@@ -66,8 +66,8 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: | 5.3.0 |
 | TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |  0.9.22 |
 | FASM |  ASM  | :white_check_mark: |  :white_check_mark: | :white_check_mark: | 1.73.09 |
-| FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | :white_check_mark: | 1.0.7 |
-| FreePascal |  Pascal  | :white_check_mark: | :x: | :white_check_mark: | 3.0.4 |
+| FB |  Basic  | :white_check_mark: | :white_check_mark: | :white_check_mark: | 1.0.7 |
+| FP |  Pascal  | :white_check_mark: | :x: | :white_check_mark: | 3.0.4 |
 | [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start) |  PHP  | :white_check_mark: |  :x: | :white_check_mark: | 5.6.40 |
 
 ## Download
