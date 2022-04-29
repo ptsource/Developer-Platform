@@ -11,6 +11,10 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 |         :---:         | 
 | Windows 7, 8, 8.1, 10, 11 platforms x86 or x64. | 
 
+## Download
+
+[![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
+
 [![Maintenance](/images/maintained.svg)]()  [![You can download here.](/images/version-20-red.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)  [![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/platform/start)
 
 ## Screenshots
@@ -83,10 +87,6 @@ you might get a warning. You should dismiss it and continue.
     and then "run anyway".
 -   Follow the instructions in the installer.
 -   You can now launch the software from your desktop.
-
-## Download
-
-[![You can download here.](/images/download-here-green.svg)](https://dl.orangedox.com/gPYt7sCliblK6xVGs7?dl=1)
 
 ## Support
 
