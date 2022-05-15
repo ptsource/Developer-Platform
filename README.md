@@ -19,7 +19,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 If you would like to support general development efforts by making a donation please click the Paypal Donate button
 
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D3EH7N735BVVW" target="_blank"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/donate.gif"></a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D3EH7N735BVVW" target="_blank"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/donate.png"></a>
 
 ## Screenshots
 
