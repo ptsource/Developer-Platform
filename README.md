@@ -72,15 +72,15 @@ If you would like to support general development efforts by making a donation pl
 
 ## Compilers Included
 
-| Compiler  | Language | x86 | x64 | Portable | Version |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| HarbourMG | C/CLI | :white_check_mark: | :white_check_mark: | :white_check_mark: | 3.2.0 |
-| MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | :white_check_mark: | 5.3.0 |
-| TCC |  C/C++  | :white_check_mark: |  :white_check_mark: | :white_check_mark: |  0.9.22 |
-| FASM |  ASM  | :white_check_mark: |  :white_check_mark: | :white_check_mark: | 1.73.09 |
-| FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | :white_check_mark: | 1.0.7 |
-| FreePascal |  Pascal  | :white_check_mark: | :white_check_mark: | :white_check_mark: | 3.0.4 |
-| [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start) |  PHP  | :white_check_mark: |  :x: | :white_check_mark: | 5.6.40 |
+| Compiler  | Language | x86 | x64 | Version |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| HarbourMG | C/CLI | :white_check_mark: | :white_check_mark: | 3.2.0 |
+| MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | 5.3.0 |
+| TCC |  C/C++  | :white_check_mark: |  :white_check_mark: |  0.9.22 |
+| FASM |  ASM  | :white_check_mark: |  :white_check_mark: | 1.73.09 |
+| FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | 1.0.7 |
+| FreePascal |  Pascal  | :white_check_mark: | :white_check_mark: | 3.0.4 |
+| [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start) |  PHP  | :white_check_mark: |  :x: | 5.6.40 |
 
 
 **Note :** This software does not use a digitally signed installer, so
