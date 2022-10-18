@@ -70,7 +70,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | HarbourMG | C/CLI | :white_check_mark: | :white_check_mark: | 3.2.0 |
 | MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | 5.3.0 |
-| TCC |  C/C++  | :white_check_mark: |  :white_check_mark: |  0.9.22 |
+| TCC |  C  | :white_check_mark: |  :white_check_mark: |  0.9.22 |
 | FASM |  ASM  | :white_check_mark: |  :white_check_mark: | 1.73.09 |
 | FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | 1.0.7 |
 | FreePascal |  Pascal  | :white_check_mark: | :white_check_mark: | 3.0.4 |
