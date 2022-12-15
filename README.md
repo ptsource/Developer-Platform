@@ -53,17 +53,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Supports calling external tools
 * ... and much more
 
-## Interpreters Included
-
-| Interpreter  | Version |
-| ------------- | ------------- | 
-| [VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start) | 10 |
-| PHP | 5.6.40 | 
-| Perl | 5.005 | 
-| Tcl/TK | 8.4 | 
-| Python | 2.7.17 | 
-| NodeJS | 5.12.0 |
-
 ## Compilers Included
 
 | Compiler  | Language | x86 | x64 | Version |
