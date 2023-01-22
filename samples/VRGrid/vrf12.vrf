@@ -1,0 +1,90 @@
+<!-- This sample code is licensed under Creative Commons https://creativecommons.org/licenses/by/4.0/ -->
+<!-- To run this code select "Run PTSource VRGrid Code" from the menu -->
+<!-- Visit wiki.ptsource.eu for the full tutorial, tips and much more -->
+<vrf>
+<globals>
+	<title name="Tutorial 12 - Mixing Libraries" />
+	<lib href="https://ptsource.github.io/VRGrid/libs/basic.vlib"/>
+	<lib href="https://ptsource.github.io/VRGrid/packs/village.vlib"/>
+	<assets href="https://ptsource.github.io/VRGrid/assets/" />
+	<map dimensions="(9,9,3)" />
+	<sky texture="images/clouds.gif" brightness="90%" />
+	<ground texture="images/dirt.gif" />
+	<atmosphere brightness="80%" />
+	<ambience file="sounds/waves.wav" volume="65%" playback="looped"/>
+	<orb position="(45,45)" brightness="60%" href="http://www.ptsource.eu" text="Check out PTSource!"/>
+	<font name="Trebuchet MS" />
+	<devel />
+</globals>
+<design>
+<create unit="vv" vrobj="village:lamp">
+</create>
+<create unit="cc" vrobj="basic:ceiling">
+         <side name="top" texture="images/vrgrid.vri" style="scaled"/>
+         <side name="bottom" texture="@basic:edgetop.gif" /> 
+         <sound file="sounds/guffaw.wav" volume="100%" playback="random" delay="3..6" /> 
+         <point_light style="pulsate" position="(128,0,128)" brightness="20%..90%" radius="1" flood="yes" color="(0,0,255)" speed="1" /> 
+</create>
+<create unit="AA" vrobj="basic:curvein">
+         <param orient="east,0"/>
+</create>
+<create unit="BB" vrobj="basic:curvein">
+         <param orient="west,0"/>
+</create>
+<create unit="CC" vrobj="basic:curvein">
+         <param orient="north,90"/>
+</create>
+<create unit="DD" vrobj="basic:curvein">
+         <param orient="270,90"/>
+</create>
+<create unit="##" vrobj="basic:full">
+         <side name="n,s,e,w" texture="@village:wall1.jpg" />
+</create>
+<create unit="--" vrobj="basic:ceiling">
+         <side name="bottom" texture="@basic:edgetop.gif" />
+</create>
+<layer number="1">
+     ## ## ## .. @@ .. ## ## ##
+     ## AA .. .. .. .. .. BB ## 
+     ## ## .. .. .. .. .. .. ## 
+     ## ## .. .. .. .. .. .. ## 
+     ## KK .. .. .. .. .. .. ## 
+     ## hh .. .. .. .. .. .. ## 
+     ## kk .. .. .. .. @@ .. ## 
+     ## DD .. .. .. .. .. CC ## 
+     ## ## ## ## ## ## ## ## ## 
+</layer>
+<layer number="2">
+     ## ## ## -- -- -- ## ## ##
+     ## cc -- -- -- -- -- cc ## 
+     ## NN -- -- -- -- -- -- ## 
+     ## -- -- -- -- -- -- -- ## 
+     ## -- -- -- -- -- -- -- ##
+     ## -- -- -- -- -- -- -- ##  
+     ## -- -- -- -- -- -- -- ## 
+     ## cc -- -- -- -- -- cc ## 
+     ## ## ## ## ## ## ## ## ##
+</layer>
+<layer number="3">
+     .. .. .. .. .. .. .. .. ..
+     .. .. .. .. .. .. .. .. ..
+     .. .. .. .. .. .. .. .. .. 
+     .. .. .. .. .. .. .. .. .. 
+     .. .. .. .. .. .. .. .. ..
+     .. .. .. .. .. .. .. .. ..
+     .. .. vv .. .. .. @@ .. .. 
+     .. .. .. .. .. .. .. .. .. 
+     .. .. .. .. .. .. .. .. ..
+</layer>
+<vrf_light style="search" position="(1,1,128)" brightness="100%" radius="7" location="(4,4,1)" direction="(17,3)..(132,3)" cone="30" speed=".5" />
+<enter location="(5,8,1)" name="default" angle="0.0" />
+<exit location="(5,1,1)" href="https://ptsource.github.io/VRGrid/tutorial/vrf1.vrf#default" trigger="click on,step on" text="Go to first tutorial" />
+<enter location="(7,6,1)" name="floor" />
+<enter location="(7,6,3)" name="roof" />
+<exit location="(7,7,1)" href="#roof" trigger="click on, step on" text="Up to the Roof"/>
+<exit location="(7,7,3)" href="#floor" trigger="click on, step on" text="Down to the Floor" />
+<popup location="(3,3,3)" radius="2" text="What's so funny?" color="(0,255,0)" size="(100,60)" textcolor="(255,0,0)" placement="top" />
+<popup location="(3,7,3)" radius="2" text="Beats me man!" color="(0,0,255)" size="(100,60)" textcolor="(255,0,0)" placement="bottom" />
+</design>
+</vrf>
+     
