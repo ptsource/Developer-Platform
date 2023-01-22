@@ -1,0 +1,42 @@
+<!-- This sample code is licensed under Creative Commons https://creativecommons.org/licenses/by/4.0/ -->
+<!-- To run this code select "Run PTSource VRGrid Code" from the menu -->
+<!-- Visit wiki.ptsource.eu for the full tutorial, tips and much more -->
+<vrf>
+<globals>
+	<title name="Tutorial 15 - Using Includes"/>
+	<lib href="https://ptsource.github.io/VRGrid/libs/basic.vlib"/>
+	<assets href="https://ptsource.github.io/VRGrid/assets/" />
+	<map dimensions="(9,9,2)" /> 
+	<sky texture="images/clouds.gif" brightness="90%" /> 
+	<ground texture="images/dirt.gif" /> 
+	<atmosphere brightness="100%" /> 
+	<devel />
+</globals> 
+<design>
+<!-- We add jump capabilities by pressing the space key by including the jumpkey functions in the script located in the assets folder  -->
+<include href="jumpkey.vrf" />
+<layer number="1"> 
+     ## ## ## .. .. .. ## ## ## 
+     ## .. .. .. .. .. .. .. ##
+     ## .. .. .. .. .. .. .. ##
+     ## .. .. .. .. .. .. .. ## 
+     ## .. .. .. .. .. .. .. ##  
+     ## .. .. .. .. .. .. .. ## 
+     ## .. .. .. .. .. .. .. ## 
+     ## .. .. .. .. .. .. .. ## 
+     ## ## ## ## ## ## ## ## ##
+</layer> 
+<layer number="2"> 
+     .. .. .. .. .. .. .. .. .. 
+     .. .. .. .. .. .. .. .. ..
+     .. .. .. .. .. .. .. .. ..
+     .. .. .. .. .. .. .. .. ..
+     .. .. .. .. .. .. .. .. .. 
+     .. .. .. .. .. .. .. .. .. 
+     .. .. .. .. .. .. .. .. ..
+     .. .. .. .. .. .. .. .. ..
+     .. .. .. .. .. .. .. .. ..
+</layer>
+<enter location="(5,8,1)" name="default" angle="0.0" /> 
+</design> 
+</vrf> 
