@@ -1,0 +1,45 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES", "./resources/");
+define("APPNAME", "Custom-drawn window"); // Application name
+create_main_window();
+wb_main_loop();
+function create_main_window() {
+    global $settings, $wb, $ctrl_list;
+    $wb -> mainwin = wb_create_window(null, ResizableWindow, APPNAME, WBC_CENTER, WBC_CENTER,589, 468, WBC_INVISIBLE | WBC_NOTIFY | WBC_CUSTOMDRAW, WBC_REDRAW);
+    wb_set_handler($wb -> mainwin, "process_main");
+    wb_set_visible($wb -> mainwin, true);
+}
+function process_main($window, $id, $ctrl, $lparam1 = 0, $lparam2 = 0) {
+    switch ($id) {
+        case IDDEFAULT:
+            if ($lparam1 &WBC_REDRAW) {
+                $xoffset = 20;
+                $yoffset = 20;
+                $buffer = $lparam2;
+                $dim = wb_get_size($window, true);
+                $winwidth = $dim[0];
+                $winheight = $dim[1];
+                wb_draw_rect($buffer, 0, 0, $winwidth, $winheight, 0x838F80);
+                for($y = $yoffset + 0; $y < $winheight - 20; $y += 20)
+                    wb_draw_line($buffer, $xoffset + 0, $y, $winwidth - 20, $y, 0xE8D8D8);
+                for($x = $xoffset + 0; $x < $winwidth - 20; $x += 20)
+                    wb_draw_line($buffer, $x, $yoffset, $x, $winheight - 20, 0xE8D8D8);
+                $font = wb_create_font("Arial", 25, BLACK, FTA_BOLD);
+                wb_draw_text($buffer, "PTSource", $winwidth - 188, 24, $font);
+                wb_destroy_font($font);
+                $font = wb_create_font("Arial", 25, WHITE, FTA_BOLD);
+                wb_draw_text($buffer, "PTSource", $winwidth - 190, 22, $font);
+                wb_destroy_font($font);
+            }
+            break;
+        case IDCLOSE: // IDCLOSE is predefined
+            wb_destroy_window($window);
+            break;
+    }
+}
+
+?>

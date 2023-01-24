@@ -1,0 +1,31 @@
+<?php
+function _f($file, $force = false)
+{
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("APPNAME", 	"Invisible controls");
+$mainwin = wb_create_window(NULL, PopupWindow, APPNAME, WBC_CENTER, WBC_CENTER, 200, 200);
+$statusbar = wb_create_control($mainwin, StatusBar, "Click the screen");
+wb_create_control($mainwin, InvisibleArea, "",   0,   0, 100, 100, 101);
+wb_create_control($mainwin, InvisibleArea, "", 100,   0, 100, 100, 102);
+wb_create_control($mainwin, InvisibleArea, "",   0, 100, 100, 100, 103);
+wb_create_control($mainwin, InvisibleArea, "", 100, 100, 100, 100, 104);
+wb_set_handler($mainwin, "process_main");
+wb_main_loop();
+function process_main($window, $id, $ctrl=0, $lparam=0, $lparam2=0)
+{
+    global $statusbar;
+    switch($id) {
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+        case IDDEFAULT:
+            break;
+        default:
+            wb_play_sound(WBC_BEEP);
+            wb_set_text($statusbar, "Control $id was clicked.");
+            break;
+    }
+}
+?>

@@ -1,0 +1,60 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES", "./resources/");
+define ("ID_COMBO1", 1001);
+define ("ID_COMBO2", 1002);
+define ("ID_LIST",   1003);
+$mainwin = wb_create_window(NULL, PopupWindow, "Combo boxes and list boxes", WBC_CENTER, WBC_CENTER, 280, 240);
+wb_create_control($mainwin, Label,		"Read-only combo:",	 10, 24,100, 20);
+wb_create_control($mainwin, ComboBox,   "",             	120, 20,140,160,	ID_COMBO1, WBC_READONLY);
+wb_create_control($mainwin, Label,		"Editable combo:",	 10, 49, 80, 20);
+wb_create_control($mainwin, ComboBox,   "",             	120, 45,140,160,	ID_COMBO2);
+wb_create_control($mainwin, ListBox,    "",             	120, 70,140,120,	ID_LIST);
+wb_create_control($mainwin, PushButton, "Re-populate",  	 10,153, 90, 25,	IDOK);
+$statusbar = wb_create_control($mainwin, StatusBar);
+process_main($mainwin, IDOK);           // Populate the combo box
+wb_set_handler($mainwin, "process_main");
+wb_main_loop();
+function process_main($window, $id, $ctrl=0) {
+    global $statusbar;
+    switch($id) {
+        case ID_LIST:
+            $text = wb_get_text($ctrl) . "_set";
+            wb_set_text(wb_get_control($window, ID_COMBO2), $text);
+        case ID_COMBO1:
+        case ID_COMBO2:
+            wb_set_text($statusbar, "Selection: " . wb_get_selected($ctrl) . " / value: " . wb_get_value($ctrl) . " / text: [" . wb_get_text($ctrl) . "]");
+            break;
+        case IDOK:
+            $nitems = rand(2, 20);
+            for($i = 0; $i < $nitems; $i++)
+                $items[] = randstr();
+            $combo1 = wb_get_control($window, ID_COMBO1);
+            $combo2 = wb_get_control($window, ID_COMBO2);
+            $list = wb_get_control($window, ID_LIST);
+            wb_set_text($combo1, $items);
+            wb_set_text($combo2, $items);
+            wb_set_text($list, $items);
+            for($i = 0; $i < $nitems; $i++) {
+                $val = rand(0, 1000);
+                wb_set_value($combo1, $val, $i);
+                wb_set_value($combo2, $val, $i);
+                wb_set_value($list, $val, $i);
+            }
+            wb_set_text($statusbar, "Controls populated with $nitems items each.");
+            break;
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+    }
+}
+function randstr() {
+    $str = "";
+    for($i = 0; $i < rand(5, 15); $i++)
+        $str .= chr(rand(ord("a"), ord("z")));
+    return $str;
+}
+?>

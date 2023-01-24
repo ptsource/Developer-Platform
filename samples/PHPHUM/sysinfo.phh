@@ -1,0 +1,42 @@
+<?php
+function _f($file, $force = false) {
+	return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+} 
+include(_f('SDK.php'));
+define("APPNAME", "System information");
+$mainwin = wb_create_window(null, PopupWindow, APPNAME, 550, 400);
+$list = wb_create_control($mainwin, ListView, "", 0, 0, 543, 375, 101, WBC_LINES | WBC_READONLY);
+wb_set_text($list, array(
+		array("", 25),
+		array("Parameter", 100),
+		array("Current value", 408)));
+$params = array("AppMemory",
+	"CommandLine",
+	"ComputerName",
+	"ConsoleMode",
+	"DiskDrives",
+	"ExePath",
+	"ExtensionPath",
+	"FontPath",
+	"FreeMemory",
+	"GDIObjects",
+	"Instance",
+	"OsPath",
+	"OSVersion",
+	"OSNumber",
+	"PgmPath",
+	"ScreenArea",
+	"SystemFont",
+	"SystemPath",
+	"TempPath",
+	"TotalMemory",
+	"UserName",
+	"UserObjects",
+	"WorkArea",
+	);
+$count = 0;
+foreach($params as $param)
+wb_create_items($list, array(array(@++$count, $param, wb_get_system_info($param))));
+wb_main_loop(); // Enter message loop
+
+?>

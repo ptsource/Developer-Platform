@@ -1,0 +1,11 @@
+<?php
+
+function _f($file, $force = false)
+{
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("APPNAME","No main loop");
+if(wb_message_box(null, "This program has no Windows loop.\nCan you believe it?", APPNAME, WBC_YESNO))
+	wb_sys_dlg_color(NULL);
+?>

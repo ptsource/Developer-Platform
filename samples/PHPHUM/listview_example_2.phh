@@ -1,0 +1,69 @@
+<?PHP
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define('APPNAME', basename( __FILE__ ));
+if(!defined('IDC_LISTVIEW_1')) {
+    define('IDC_LISTVIEW_1', 1001);
+}
+$winmain = wb_create_window(null, AppWindow, APPNAME, WBC_CENTER, WBC_CENTER, 540, 449, WBC_NOTIFY, WBC_MOUSEMOVE | WBC_HEADERSEL );
+$inifile = str_replace('.phh','', __FILE__).'.ini';
+$ini = new hn_ini($inifile,TRUE,TRUE);
+$data = example_data();
+$lv1  = new hnwb_ListView_Buttons($ini,TRUE,TRUE);
+$lv1->define_Start_ID(7775);
+$lv1->ctrl = wb_create_control($winmain, ListView, '', 10, 25, 511, 345, IDC_LISTVIEW_1, WBC_VISIBLE | WBC_ENABLED | WBC_SORT | WBC_LINES | WBC_CHECKBOXES, 0, 0);
+$lv1->initialize_ini();
+$lv1->set_ASSOC_AUTO_Column_Header($data);
+$lv1->initialize();
+$lv1->Data_PUT($data);
+wb_set_handler($winmain, "process_main");
+wb_main_loop();
+function process_main($window, $id, $ctrl=0, $lparam1=0, $lparam2=0) {
+    if(!isset($GLOBALS['LV_cfg'])) {
+        $GLOBALS['LV_cfg'] = null;
+    }
+    global $lv1;
+    switch($id) {
+        case IDDEFAULT:
+            $lv1->Event_Handler($window, $id, $ctrl, $lparam1, $lparam2, $GLOBALS['LV_cfg']);
+        case $lv1->get_ID():
+            $lv1->Event_Handler($window, $id, $ctrl, $lparam1, $lparam2, $GLOBALS['LV_cfg']);
+            break;
+        case IDCLOSE:
+            $lv1->Destroy();
+            $lv1=null;
+            unset($lv1);
+            $GLOBALS['LV_cfg'] = null;
+            unset($GLOBALS['LV_cfg']);
+            wb_destroy_window($window);
+            break;
+    }
+}
+function example_data() {
+    $data_src = array(
+                    array('company'=>'company',			'name'=>'doe',		'firstname'=>'john'),
+                    array('company'=>'',				'name'=>'doe',		'firstname'=>'john'),
+                    array('company'=>'ab ltd.',			'name'=>'doe',		'firstname'=>'john'),
+                    array('company'=>'de ltd.',			'name'=>'doe',		'firstname'=>'john'),
+                    array('company'=>'fg ltd.',			'name'=>'doe',		'firstname'=>'john'),
+                    array('company'=>'xy ltd.',			'name'=>'doe',		'firstname'=>'john'),
+                    array('company'=>'company',			'name'=>'wesson',	'firstname'=>'al'),
+                    array('company'=>'company',			'name'=>'baker',	'firstname'=>'barry'),
+                    array('company'=>'company',			'name'=>'butcher',	'firstname'=>'barry'),
+                    array('company'=>'company',			'name'=>'baker',	'firstname'=>'terry'),
+                    array('company'=>'xy ltd.',			'name'=>'patterson','firstname'=>'aldus'),
+                    array('company'=>'trade united',	'name'=>'hugley',	'firstname'=>'jenny')
+                );
+    $data = array();
+    $uid = 0;
+    for($i=0; $i<3; $i++) {
+        foreach($data_src as $d) {
+            $data[] = array_merge($d,array('id'=>$uid));
+            $uid++;
+        }
+    }
+    return $data;
+}
+?>

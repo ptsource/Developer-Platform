@@ -1,0 +1,48 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES","./resources/");
+define("ID_HYPERLINK1",		101);
+define("ID_HYPERLINK2",		102);
+define("ID_UPDATE",			103);
+$cpwindow = wb_create_window(NULL, PopupWindow, 'Hyperlink test', WBC_CENTER, WBC_CENTER, 300, 200, 0);
+$link1 = wb_create_control($cpwindow, HyperLink, 'Go to Wiki', 20, 70, 280, 20, ID_HYPERLINK1, WBC_LINES);
+$link2 = wb_create_control($cpwindow, HyperLink, 'Go to Wiki', 20, 100, 280, 20, ID_HYPERLINK2, 0, 0xFF8000);
+$button = wb_create_control($cpwindow, PushButton, 'Change font', 100, 10, 90, 24, ID_UPDATE, 0);
+$font1 = wb_create_font("Verdana", 10);
+$font2 = wb_create_font("Times", 12);
+wb_set_handler($cpwindow, "process_main");
+wb_main_loop();
+function process_main($window, $id, $ctrl=0, $lparam1=0, $lparam2=0) {
+    global $statusbar, $button, $font2, $font1, $link1, $link2, $cpwindow;
+    switch($id) {
+        case ID_HYPERLINK1:
+        case ID_HYPERLINK2:
+            if(!wb_exec('http://wiki.ptsource.eu/'))
+                wb_message_box($window, 'Problem opening web site.', 'Error', WBC_INFO);
+            break;
+        case ID_UPDATE:
+            static $test = 0;
+            switch(++$test % 3) {
+                case 0:
+                    wb_set_font($link1, 0);
+                    wb_set_font($link2, 0);
+                    break;
+                case 1:
+                    wb_set_font($link1, $font1);
+                    wb_set_font($link2, $font1);
+                    break;
+                case 2:
+                    wb_set_font($link1, $font2);
+                    wb_set_font($link2, $font2);
+                    break;
+            }
+            break;
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+    }
+}
+?>

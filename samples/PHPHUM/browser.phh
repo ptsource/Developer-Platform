@@ -1,0 +1,202 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+error_reporting(0);
+define("PATH_RES", "./resources/");
+define("APPNAME", "Mini-browser");
+define("PAGE_HOME", "http://wiki.ptsource.eu/");
+define("PAGE_SEARCH", "http://google.com/");
+define("PAGE_WEBSITE", "http://wiki.ptsource.eu/");
+define("PAGE_FORUM", "http://wiki.ptsource.eu/");
+define("BM_SETCHECK", 241);
+define("LVM_FIRST", 0x1000);
+define("LVM_DELETEALLITEMS", (LVM_FIRST + 9));
+define("LVM_GETITEMCOUNT", (LVM_FIRST + 4));
+define("LVM_GETITEMSTATE", (LVM_FIRST + 44));
+define("LVM_GETSELECTEDCOUNT", (LVM_FIRST + 50));
+define("LVIS_SELECTED", 2);
+define("TCM_GETCURSEL", 4875);
+define("CB_FINDSTRINGEXACT", 344);
+define("CB_SETCURSEL", 334);
+define("LB_FINDSTRINGEXACT", 418);
+define("LB_SETCURSEL", 390);
+define("TCM_SETCURSEL", 4876);
+define("WM_SETTEXT", 12);
+define("WB_KX_SCREEN", 1.498);
+define("WB_KY_SCREEN", 1.625);
+define("WS_VISIBLE", 0x10000000);
+define("WS_DISABLED", 0x08000000);
+define("WS_GROUP", 0x00020000);
+define("WS_EX_STATICEDGE", 0x00020000);
+define("BS_PUSHBUTTON", 0x00);
+define("BS_CHECKBOX", 0x02);
+define("BS_AUTOCHECKBOX", 0x03);
+define("BS_RADIOBUTTON", 0x04);
+define("BS_GROUPBOX", 0x07);
+define("BS_AUTORADIOBUTTON", 0x09);
+define("BS_ICON", 0x40);
+define("BS_BITMAP", 0x80);
+define("ES_NUMBER", 0x2000);
+define("ES_PASSWORD", 0x20);
+define("ES_READONLY", 0x0800);
+define("ES_UPPERCASE", 0x08);
+define("ES_LEFT", 0x0);
+define("ES_CENTER", 0x01);
+define("ES_RIGHT", 0x02);
+define("ES_MULTILINE", 0x04);
+define("SS_LEFT", 0x00);
+define("SS_CENTER", 0x01);
+define("SS_RIGHT", 0x02);
+define("SS_ETCHEDHORZ", 0x10);
+define("SS_ETCHEDVERT", 0x11);
+define("SS_ETCHEDFRAME", 0x12);
+define("SS_ICON", 0x03);
+define("SS_BITMAP", 0x0E);
+define("SS_LEFTNOWORDWRAP", 0x0C);
+define("SS_WORDELLIPSIS", 0xC000);
+define("CBS_SORT", 0x100);
+define("CBS_DROPDOWNLIST", 3);
+define("LBS_SORT", 2);
+define("LVS_NOSORTHEADER", 0x00008000);
+define("LVS_GRIDLINES", 0x00800000); // Actually WS_BORDER
+define("LVS_CHECKBOXES", 0x00000800); // Actually LVS_ALIGNLEFT
+define("LVS_SINGLESEL", 0x00000004);
+define("TBS_AUTOTICKS", 1);
+define("ID_BACK", 1001);
+define("ID_FORWARD", 1002);
+define("ID_HOME", 1003);
+define("ID_SEARCH", 1004);
+define("ID_REFRESH", 1005);
+define("ID_STOP", 1006);
+define("ID_GO", 201);
+define("ID_OPEN", 202);
+define("ID_BLANK", 203);
+define("ID_ABOUT", 204);
+define("ID_WEBSITE", 205);
+define("ID_URL", 207);
+define("ID_TIMER", 101);
+create_main_window();
+wb_main_loop();
+function create_main_window() {
+    global $hwnd_html, $ctrl_url, $statusbar;
+    $mainwin = wb_create_window(null, AppWindow, APPNAME, WBC_CENTER, WBC_CENTER, 780, 560, WBC_INVISIBLE | WBC_NOTIFY, WBC_RESIZE);
+    $mainmenu = wb_create_control($mainwin, Menu, array("&File",
+                                  null,
+                                  array(ID_OPEN, "&Open document...\tCtrl+O", "", "", "Ctrl+O"),
+                                  null,
+                                  array(IDCLOSE, "E&xit\tAlt+F4", "", ""),
+                                  "&View",
+                                  array(ID_GO, "&Go to URL\tEnter", "", "", "Enter"), null,
+                                  array(ID_HOME, "&Home page", ""),
+                                  array(ID_BACK, "Go &back", ""),
+                                  array(ID_FORWARD, "Go &forward", ""),
+                                  null,
+                                  array(ID_BLANK, "Blan&k page", ""),
+                                  array(ID_STOP, "&Stop", "", "", "Esc"),
+                                  array(ID_REFRESH, "&Refresh", ""),
+                                  "&Tools",
+                                  array(ID_SEARCH, "&Search", ""),
+                                  "&Help",
+                                  array(ID_WEBSITE, "&Website"),
+                                  null,
+                                  array(ID_ABOUT, "&About...", "", "", "")
+                                                       ));
+    $toolbar = wb_create_control($mainwin, ToolBar, array(
+                                     null,
+                                     array(ID_BACK, null, "Go Back", 0),
+                                     array(ID_FORWARD, null, "Go Forward", 1),
+                                     array(ID_STOP, null, "Stop", 5),
+                                     array(ID_REFRESH, null, "Refresh", 4),
+                                     array(ID_HOME, null, "Home", 2),
+                                     null,
+                                     array(ID_SEARCH, null, "Search", 3),
+                                     null,
+                                     array(ID_GO, null, "Go", 6),
+                                 ), 0, 0, 16, 16, 0, 0, PATH_RES . "browser.bmp");
+    $hwnd_html = wb_create_control($mainwin, HTMLControl, "", 0, 30, 765, 460);
+    $ctrl_url = wb_create_control($toolbar, EditBox, PAGE_HOME, 190, 3, 580, 20, ID_URL);
+    $statusbar = wb_create_control($mainwin, StatusBar, "");
+    wb_set_handler($mainwin, "process_main");
+    wb_set_image($mainwin, PATH_RES . 'app.ico');
+    wb_set_visible($mainwin, true);
+    wb_create_timer($mainwin, ID_TIMER, 250);
+    process_main($mainwin, ID_WEBSITE);
+}
+function process_main($window, $id, $ctrl = 0, $lparam1 = 0, $lparam2 = 0) {
+    global $hwnd_html, $ctrl_url, $statusbar;
+    static $file_filter = array(
+                              array("HTML files", "*.htm?;*.mht"),
+                              array("Text files", "*.txt"),
+                              array("Image files", "*.gif;*.jpg;*.jpeg;*.png"),
+                              array("XML files", "*.xml")
+                          );
+    switch ($id) {
+        case IDDEFAULT:
+            if ($lparam1 == WBC_RESIZE) {
+                $dim = wb_get_size($window, false);
+                wb_set_size($hwnd_html, $dim[0] - 15, $dim[1] - 100);
+            }
+            break;
+        case ID_TIMER:
+            if (wb_set_location($hwnd_html, "cmd:busy"))
+                wb_set_text($statusbar, "Loading page, please wait...");
+            else
+                wb_set_text($statusbar, "Ready");
+            break;
+        case ID_BACK:
+            wb_set_location($hwnd_html, "cmd:back");
+            break;
+        case ID_FORWARD:
+            wb_set_location($hwnd_html, "cmd:forward");
+            break;
+        case ID_REFRESH:
+            wb_set_location($hwnd_html, "cmd:refresh");
+            break;
+        case ID_STOP:
+            wb_set_location($hwnd_html, "cmd:stop");
+            break;
+        case ID_OPEN:
+            $filename = wb_sys_dlg_open($window, "Open document", $file_filter);
+            if ($filename)
+                wb_set_text($hwnd_html, $filename);
+            break;
+        case ID_BLANK:
+            wb_set_location($hwnd_html, "cmd:blank");
+            wb_set_text($ctrl_url, "");
+            break;
+        case ID_SEARCH: // Not using the browser function here
+            wb_set_location($hwnd_html, PAGE_SEARCH);
+            wb_set_text($ctrl_url, PAGE_SEARCH);
+            break;
+        case ID_HOME: // Not using the browser function here
+            wb_set_location($hwnd_html, PAGE_HOME);
+            wb_set_text($ctrl_url, PAGE_HOME);
+            break;
+        case ID_WEBSITE:
+            wb_set_location($hwnd_html, PAGE_WEBSITE);
+            wb_set_text($ctrl_url, PAGE_WEBSITE);
+            break;
+        case ID_GO:
+            wb_set_location($hwnd_html, wb_get_text($ctrl_url));
+            break;
+        case ID_ABOUT:
+            create_about_box($window);
+            break;
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+    }
+}
+function create_about_box($parent) {
+    $about = wb_create_window($parent, ModalDialog, "About this program", 260, 220);
+    wb_set_handler($about, "process_about");
+    wb_create_control($about, Label, APPNAME, 20, 20, 200, 80, 0, WBC_MULTILINE | WBC_READONLY);
+    wb_create_control($about, PushButton, "Close", 80, 120, 80, 22, IDCANCEL);
+}
+function process_about($window, $id) {
+    wb_destroy_window($window);
+}
+
+?>

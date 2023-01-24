@@ -1,0 +1,34 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES","./resources/");
+define("ID_APP_TIMER",	201);
+define("SHORT_FMT",		"h:i:s A");
+define("LONG_FMT",		"l, F dS, Y --- ");
+$mainwin = wb_create_window(NULL, PopupWindow, "Clock", 120, 90);
+wb_set_handler($mainwin, "process_main");
+$label = wb_create_control($mainwin, Label, date("h:i:s A"), 0, 12, 112, 20, 0, WBC_CENTER);
+wb_set_font($label, wb_create_font("Tahoma", 11, null, FTA_BOLD));
+$statusbar = wb_create_control($mainwin, StatusBar, date(SHORT_FMT));
+wb_set_font($statusbar, wb_create_font("Courier New", 8));
+wb_create_timer($mainwin, ID_APP_TIMER, 120);
+wb_main_loop();
+function process_main($window, $id) {
+    global $label, $statusbar;
+    static $pos;
+    switch($id) {
+        case ID_APP_TIMER:
+            wb_set_text($label, date(SHORT_FMT));
+            $text = date(LONG_FMT);
+            $len = strlen($text);
+            wb_set_text($statusbar, substr($text . $text, $pos, $len));
+            $pos = $pos < $len ? $pos + 1 : 0;
+            break;
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+    }
+}
+?>

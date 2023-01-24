@@ -1,0 +1,62 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES","./resources/");
+define("APPNAME",           "Hello world!");    // Application name
+define("ID_ABOUT",          101);
+define("ID_OPEN",           102);
+class Wb {
+    var $file_filter = array(
+                           array("PHP source code",    "*.php?"),
+                           array("Web page",           "*.htm?"),
+                           array("Text document",      "*.txt"),
+                           array("All files",          "*.*")
+                       );
+}
+$wb = new Wb;
+create_main_window();
+wb_main_loop();
+function create_main_window() {
+    global $wb;				// Here is the global variable declaration
+    $wb->mainwin = wb_create_window(NULL, AppWindow, APPNAME, 320, 240);
+    wb_set_handler($wb->mainwin, "process_main");
+    wb_set_image($wb->mainwin, PATH_RES . "app.ico");
+    wb_create_control($wb->mainwin, Menu, array(
+                          "&File",
+                          array(ID_OPEN,  "&Open...\tCtrl+O", NULL, PATH_RES . "menu_open.bmp", "Ctrl+O"),
+                          null,           // Separator
+                          array(IDCLOSE,  "E&xit\tAlt+F4",    NULL, PATH_RES . "menu_exit.bmp"),
+                          "&Help",
+                          array(ID_ABOUT, "&About...",        NULL, PATH_RES . "menu_help.bmp")
+                      ));
+    wb_create_control($wb->mainwin, ToolBar, array(
+                          null,                                   // Toolbar separator
+                          array(ID_OPEN,  NULL,   "Open a file",              1),
+                          null,                                   // Toolbar separator
+                          array(ID_ABOUT, NULL,   "About this application",   11),
+                          array(IDCLOSE,  NULL,   "Exit this application",    12),
+                      ), 0, 0, 16, 15, 0, 0, PATH_RES . "toolbar.bmp");
+    $wb->statusbar = wb_create_control($wb->mainwin, StatusBar, APPNAME);
+    wb_create_control($wb->mainwin, Label, "This is a demo 'Hello world'\n" .
+                      "It has a toolbar, a status bar and a menu.",
+                      10, 70, 290, 80, 0, WBC_CENTER);
+}
+function process_main($window, $id) {
+    global $wb;				// Here is the global variable declaration
+    switch($id) {
+        case ID_ABOUT:
+            wb_message_box($window, "PHP version " . PHP_VERSION .  "\n", "About " . APPNAME, WBC_INFO);
+            break;
+        case ID_OPEN:
+            $wb->filename = wb_sys_dlg_open($window, "Get It", $wb->file_filter);
+            if($wb->filename)
+                wb_set_text($wb->statusbar, $wb->filename);
+            break;
+        case IDCLOSE:       // IDCLOSE is predefined
+            wb_destroy_window($window);
+            break;
+    }
+}
+?>

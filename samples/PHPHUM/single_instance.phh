@@ -1,0 +1,29 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES", "./resources/");
+define("APPNAME",	"Single Instance Application");
+if(wb_get_instance(APPNAME, TRUE)) {
+    die;
+}
+create_main_window();
+wb_main_loop();
+function create_main_window() {
+    global $mainwin, $statusbar, $mainmenu, $mainwin;
+    $dim = explode(" ", wb_get_system_info("screenarea"));
+    $mainwin = wb_create_window(NULL, AppWindow, APPNAME,rand(0, $dim[2] - 320),rand(0, $dim[3] - 140),320, 140, WBC_INVISIBLE, 0);
+    wb_set_handler($mainwin, "process_main");
+    wb_create_control($mainwin, PushButton, "Close", 80, 30, 150, 50, IDCLOSE);
+    wb_set_text($mainwin, "This caption was changed at runtime.");
+    wb_set_visible($mainwin, true);
+}
+function process_main($window, $id) {
+    switch($id) {
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+    }
+}
+?>

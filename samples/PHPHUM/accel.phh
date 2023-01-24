@@ -1,0 +1,52 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES",		"./resources/");
+define("APPNAME",		"Accelerators");	// Application name
+define("ID_PLUS",		101);
+define("ID_C_PLUS",		102);
+define("ID_ENTER",		201);
+define("ID_C_ENTER",	202);
+$mainwin = wb_create_window(NULL, AppWindow, APPNAME, 320, 240);
+wb_create_control($mainwin, Menu, array(
+                      "&Test",
+                      array(ID_ENTER,		"Accel1\tEnter",		NULL, "", "enter"),
+                      array(ID_C_ENTER,	"Accel2\tCtrl+Enter",	NULL, "", "ctrl+enter"),
+                      null,
+                      array(ID_PLUS,		"Accel3\t+",			NULL, "", "plus"),
+                      array(ID_C_PLUS,	"Accel4\tCtrl++",		NULL, "", "ctrl+plus"),
+                  ));
+wb_create_control($mainwin, Accel, array(
+                      array(ID_ENTER,		"enter"),
+                      array(ID_C_ENTER,	"ctrl+enter"),
+                      array(ID_PLUS,		"plus"),
+                      array(ID_C_PLUS,	"ctrl+plus"),
+                      array(ID_ENTER,		"F6"),
+                      array(ID_C_ENTER,	"F7"),
+                      array(ID_PLUS,		"F8"),
+                      array(ID_C_PLUS,	"F9"),
+                  ));
+wb_set_handler($mainwin, "process_main");
+wb_main_loop();
+function process_main($window, $id) {
+    switch($id) {
+        case ID_PLUS:
+            wb_message_box($window, "You pressed Plus.", APPNAME);
+            break;
+        case ID_C_PLUS:
+            wb_message_box($window, "You pressed Ctrl+Plus.", APPNAME);
+            break;
+        case ID_ENTER:
+            wb_message_box($window, "You pressed Enter.", APPNAME);
+            break;
+        case ID_C_ENTER:
+            wb_message_box($window, "You pressed Ctrl+Enter.", APPNAME);
+            break;
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+    }
+}
+?>

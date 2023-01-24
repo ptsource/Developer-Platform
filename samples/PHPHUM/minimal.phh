@@ -1,0 +1,9 @@
+<?php
+function _f($file, $force = false)
+{
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+wb_create_window(NULL, PopupWindow, "Hello world!", 480, 320);
+wb_main_loop();
+?>

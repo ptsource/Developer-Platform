@@ -1,0 +1,75 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES", "./resources/");
+define("APPNAME", "Borderless Window"); // The window title will be seen in the taskbar and on Alt+tab
+define("WIDTH", 576);
+define("HEIGHT", 400);
+define("ID_ONTOP", 101);
+if (wb_get_instance(APPNAME, true))
+    die;
+$font_title = wb_create_font("Verdana", 20, 0x80FFFF, FTA_BOLD);
+$font_text = wb_create_font("Tahoma", 10, WHITE, FTA_BOLD);
+$mainwin = wb_create_window(null, NakedWindow, APPNAME, WBC_CENTER, WBC_CENTER, WIDTH, HEIGHT,WBC_INVISIBLE | WBC_NOTIFY | WBC_CUSTOMDRAW, WBC_REDRAW);
+wb_set_area($mainwin, WBC_TITLE, 0, 0, WIDTH, 86);
+$states = wb_load_image(PATH_RES . 'states.bmp');
+$btn = wb_create_control($mainwin, ImageButton, "Toggle Always on Top", 10, 346, 32, 32, ID_ONTOP, WBC_IMAGE);
+wb_set_image($btn, $states);
+$btn = wb_create_control($mainwin, ImageButton, "Button 2", 42, 346, 32, 32, 0, WBC_IMAGE);
+wb_set_image($btn, $states);
+$btn = wb_create_control($mainwin, ImageButton, "Button 3", 74, 346, 32, 32, 0, WBC_IMAGE);
+wb_set_image($btn, $states);
+$btn = wb_create_control($mainwin, ImageButton, "Button 4", 106, 346, 32, 32, 0, WBC_IMAGE | WBC_DISABLED);
+wb_set_image($btn, $states);
+$btn = wb_create_control($mainwin, ImageButton, "Close this window", WIDTH - 40, 346, 32, 32, IDCLOSE, WBC_IMAGE);
+wb_set_image($btn, $states);
+wb_destroy_image($btn);
+wb_set_handler($mainwin, "process_main");
+wb_set_image($mainwin, PATH_RES . 'app.ico'); // Icon will be seen in the taskbar and on Alt+tab
+wb_set_visible($mainwin, true);
+wb_main_loop();
+function process_main($window, $id, $ctrl, $lparam1 = 0, $lparam2 = 0) {
+    switch ($id) {
+        case IDDEFAULT:
+            if ($lparam1 &WBC_REDRAW) {
+                $dim = wb_get_size($window, true);
+                $winwidth = $dim[0];
+                $winheight = $dim[1];
+                draw_on_window($lparam2, $winwidth, $winheight);
+            }
+            break;
+        case IDCLOSE:
+            wb_destroy_window($window);
+            wb_destroy_font(); // Destroy all fonts
+            break;
+        case ID_ONTOP:
+            static $ontop = false;
+            $ontop = !$ontop;
+            wb_set_style($window, WBC_TOP, $ontop);
+    }
+}
+function draw_on_window($buffer, $width, $height) {
+    global $font_title, $font_text;
+    wb_draw_rect($buffer, 0, 0, $width, $height, BLACK);
+    wb_draw_rect($buffer, 0, 0, $width, 70, 0x8D5A2D);
+    wb_draw_rect($buffer, 0, 326, $width, 70, 0x8D5A2D);
+    $pattern = wb_create_image(16, 16);
+    wb_draw_rect($pattern, 0, 0, 16, 16, 0x704010);
+    wb_draw_rect($pattern, 3, 3, 10, 10, 0xB08050);
+    wb_draw_rect($pattern, 6, 6, 4, 4, 0x704010);
+    for($i = 0; $i < $width; $i += 16) {
+        wb_draw_image($buffer, $pattern, $i, 0);
+        wb_draw_image($buffer, $pattern, $i, 70);
+        wb_draw_image($buffer, $pattern, $i, 326);
+        wb_draw_image($buffer, $pattern, $i, $height - 16);
+    }
+    wb_destroy_image($pattern);
+    wb_draw_text($buffer, APPNAME, 0, 22, $width, 40, $font_title, WBC_CENTER);
+    for($x = 10, $y = 95; $y < 310; $x += 5, $y += 20)
+        wb_draw_text($buffer, "To put this application on top on other windows, click the first button below.",
+                     $x, $y, 0, 0, $font_text);
+}
+
+?>

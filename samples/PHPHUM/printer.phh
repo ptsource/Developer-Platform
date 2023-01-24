@@ -1,0 +1,155 @@
+<?php
+function _f($file, $force = false)
+{
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("APPNAME", 	"Printing Example");	// Application name
+create_print_window(null);
+wb_main_loop();
+function create_print_window($parent)
+{
+	global $winmain;
+if(!defined('IDC_PRINTERLIST')) define('IDC_PRINTERLIST', 1005);
+if(!defined('IDC_PAPERSIZE')) define('IDC_PAPERSIZE', 1007);
+if(!defined('IDC_PRINTALL')) define('IDC_PRINTALL', 1008);
+if(!defined('IDC_PRINTPAGES')) define('IDC_PRINTPAGES', 1009);
+if(!defined('IDC_STARTPAGE')) define('IDC_STARTPAGE', 1010);
+if(!defined('IDC_ENDPAGE')) define('IDC_ENDPAGE', 1012);
+if(!defined('IDC_QUALITY')) define('IDC_QUALITY', 1014);
+if(!defined('IDC_WIDTH')) define('IDC_WIDTH', 1015);
+if(!defined('IDC_HEIGHT')) define('IDC_HEIGHT', 1016);
+if(!defined('IDC_UNITS')) define('IDC_UNITS', 1018);
+if(!defined('IDC_COPIES')) define('IDC_COPIES', 1019);
+if(!defined('IDC_SPINNER1002')) define('IDC_SPINNER1002', 1002);
+if(!defined('IDC_PORTRAIT')) define('IDC_PORTRAIT', 1020);
+if(!defined('IDC_LANDSCAPE')) define('IDC_LANDSCAPE', 1021);
+$winmain = wb_create_window(null, AppWindow, 'Print', WBC_CENTER, WBC_CENTER, 409, 337, 0x00000000, 0);
+wb_create_control($winmain, Frame, 'Printer', 15, 10, 370, 80, 0, 0x00000000, 0, 0);
+wb_create_control($winmain, Frame, 'Print range', 15, 95, 180, 90, 0, 0x00000000, 0, 0);
+wb_create_control($winmain, Frame, 'Paper size', 205, 95, 180, 90, 0, 0x00000000, 0, 0);
+wb_create_control($winmain, Frame, 'Number of copies', 15, 190, 180, 65, 0, 0x00000000, 0, 0);
+wb_create_control($winmain, Frame, 'Orientation', 205, 190, 180, 65, 0, 0x00000000, 0, 0);
+wb_create_control($winmain, ComboBox, '', 95, 30, 280, 110, IDC_PRINTERLIST, 0x00000040, 0, 0);
+wb_create_control($winmain, Label, 'Name:', 40, 30, 50, 15, 0, 0x00000020, 0, 0);
+wb_create_control($winmain, ComboBox, '', 215, 115, 160, 85, IDC_PAPERSIZE, 0x00000040, 0, 0);
+wb_create_control($winmain, RadioButton, 'All', 30, 125, 135, 15, IDC_PRINTALL, 0x00080000, 1, 0);
+wb_create_control($winmain, RadioButton, 'Pages', 30, 155, 50, 15, IDC_PRINTPAGES, 0x00000000, 0, 0);
+wb_create_control($winmain, EditBox, '1', 80, 153, 35, 20, IDC_STARTPAGE, 0x00000400, 0, 0);
+wb_create_control($winmain, Label, 'to', 120, 155, 14, 15, 0, 0x00000000, 0, 0);
+wb_create_control($winmain, EditBox, '1', 135, 153, 35, 20, IDC_ENDPAGE, 0x00000000, 0, 0);
+wb_create_control($winmain, Label, 'Quality:', 35, 60, 55, 15, 0, 0x00000020, 0, 0);
+wb_create_control($winmain, ComboBox, '', 95, 60, 135, 85, IDC_QUALITY, 0x00000040, 0, 0);
+wb_create_control($winmain, EditBox, '', 215, 150, 55, 20, IDC_WIDTH, 0x00000040, 0, 0);
+wb_create_control($winmain, EditBox, '', 295, 150, 55, 20, IDC_HEIGHT, 0x00000040, 0, 0);
+wb_create_control($winmain, Label, 'x', 277, 152, 11, 15, 0, 0x00000800, 0, 0);
+wb_create_control($winmain, Label, 'units', 355, 152, 25, 15, IDC_UNITS, 0x00000000, 0, 0);
+wb_create_control($winmain, EditBox, '1', 35, 215, 90, 20, IDC_COPIES, 0x00000000, 0, 0);
+wb_create_control($winmain, Spinner, 'Spinner21', 125, 215, 20, 20, IDC_SPINNER1002, 0x00080000, 0, 0);
+wb_create_control($winmain, RadioButton, 'Portrait', 220, 210, 120, 15, IDC_PORTRAIT, 0x00000000, 1, 0);
+wb_create_control($winmain, RadioButton, 'Landscape', 220, 230, 120, 15, IDC_LANDSCAPE, 0x00000000, 0, 0);
+wb_create_control($winmain, PushButton, 'Print', 100, 270, 90, 25, IDOK, 0x00000000, 0, 0);
+wb_create_control($winmain, PushButton, 'Close', 210, 270, 90, 25, IDCLOSE, 0x00000000, 0, 0);
+	$printer_list = printer_list(PRINTER_ENUM_LOCAL);
+	$combo = wb_get_control($winmain, IDC_PRINTERLIST);
+	wb_delete_items($combo);
+	foreach($printer_list as $printer) {
+		wb_create_items($combo, $printer['NAME']);
+	}
+	$combo = wb_get_control($winmain, IDC_PAPERSIZE);
+	static $formats = array('A4', 'US Letter', 'US Legal');
+	foreach($formats as $format) {
+		wb_create_items($combo, $format);
+	}
+	$combo = wb_get_control($winmain, IDC_QUALITY);
+	static $dpis = array('Fast (100 dpi)', 'Standard (200 dpi)', 'Fine (300 dpi)');
+	foreach($dpis as $dpi) {
+		wb_create_items($combo, $dpi);
+	}
+	wb_set_value(wb_get_control($winmain, IDC_PRINTALL), true);
+	wb_set_text(wb_get_control($winmain, IDC_UNITS), 'mm');
+	wb_set_value(wb_get_control($winmain, IDC_COPIES), 1);
+	wb_set_enabled(wb_get_control($winmain, IDC_PRINTPAGES), false);
+	wb_set_enabled(wb_get_control($winmain, IDC_STARTPAGE), false);
+	wb_set_enabled(wb_get_control($winmain, IDC_ENDPAGE), false);
+	wb_set_handler($winmain, 'process_print');
+	wb_set_text($winmain, APPNAME);
+	process_print($winmain, IDC_PAPERSIZE);		// Select first paper size
+	wb_set_visible($winmain, true);
+}
+function process_print($window, $id, $ctrl=null)
+{
+	global $winmain;
+	switch($id) {
+		case IDC_PAPERSIZE:
+			$size = wb_get_selected(wb_get_control($window, $id));
+			switch($size) {
+				case 0: $width = 297;	$height = 210; 		break;		// A4
+				case 1: $width = 279.4; $height = 215.9;	break;		// Letter
+				case 2: $width = 355.6;	$height = 215.9;	break;		// Legal
+			}
+			wb_set_text(wb_get_control($window, IDC_WIDTH),
+				number_format($width, 1, '.', ','));
+			wb_set_text(wb_get_control($window, IDC_HEIGHT),
+				number_format($height, 1, '.', ','));
+			break;
+		case IDOK:
+			$printer = wb_get_text(wb_get_control($winmain, IDC_PRINTERLIST));
+			$prn = printer_open($printer);
+			if(!$prn) {
+				wb_message_box($window, "Could not open printer", APPNAME, WBC_WARNING);
+				break;
+			}
+			$val = wb_get_selected(wb_get_control($winmain, IDC_QUALITY));
+			printer_set_option($prn, PRINTER_RESOLUTION_X, ($val + 1) * 100);
+			printer_set_option($prn, PRINTER_RESOLUTION_Y, ($val + 1) * 100);
+			$val = wb_get_selected(wb_get_control($winmain, IDC_PAPERSIZE));
+			switch($val) {
+				case 1: printer_set_option($prn, PRINTER_PAPER_FORMAT, PRINTER_FORMAT_A4); break;
+				case 2: printer_set_option($prn, PRINTER_PAPER_FORMAT, PRINTER_FORMAT_LETTER); break;
+				case 3: printer_set_option($prn, PRINTER_PAPER_FORMAT, PRINTER_FORMAT_LEGAL); break;
+			}
+			printer_set_option($prn, PRINTER_COPIES, wb_get_value(wb_get_control($winmain, IDC_COPIES)));
+			if(wb_get_value(wb_get_control($winmain, IDC_PORTRAIT)))
+				printer_set_option($prn, PRINTER_ORIENTATION, PRINTER_ORIENTATION_PORTRAIT);
+			else
+				printer_set_option($prn, PRINTER_ORIENTATION, PRINTER_ORIENTATION_LANDSCAPE);
+			if(!printer_start_doc($prn, APPNAME)) {
+				wb_message_box($window, "Could not start print job", APPNAME, WBC_WARNING);
+				break;
+			}
+			printer_start_page($prn);
+			$bmpfile = '_temp.bmp';
+			$bmp = wb_create_image(2000, 100);
+			draw_on_window($bmp, 2000, 100);
+			wb_save_image($bmp, $bmpfile);
+			wb_destroy_image($bmp);
+			printer_draw_bmp($prn, $bmpfile, 20, 20);
+			printer_draw_bmp($prn, $bmpfile, 20, 500);
+			$font = printer_create_font("Tahoma", 148, 64, PRINTER_FW_LIGHT, false, false, false, 0);
+			printer_select_font($prn, $font);
+			printer_draw_text($prn, APPNAME, 20, 200);
+			printer_delete_font($font);
+			printer_end_page($prn);
+			printer_end_doc($prn);
+			printer_close($prn);
+			unlink($bmpfile);
+			break;
+		case IDCLOSE:
+			wb_destroy_window($window);
+			break;
+	}
+}
+function draw_on_window($buffer, $width, $height)
+{
+	wb_draw_rect($buffer, 0, 0, $width, $height, 0xD0A0A0);
+	$pattern = wb_create_image(16, 16);
+	wb_draw_rect($pattern, 0, 0, 16, 16, 0x704010);
+	wb_draw_rect($pattern, 3, 3, 10, 10, 0xB08050);
+	wb_draw_rect($pattern, 6, 6, 4, 4, 0x704010);
+	for($i = 0; $i < $width; $i += 16) {
+		wb_draw_image($buffer, $pattern, $i, 0);
+	}
+	wb_destroy_image($pattern);
+}
+?>

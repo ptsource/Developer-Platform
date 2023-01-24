@@ -1,0 +1,21 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("APPNAME","External DLL");
+$KERNEL = wb_load_library("KERNEL");
+$fgms = wb_get_function_address("GlobalMemoryStatus", $KERNEL);
+define("MEMORYSTATUS",        "Vlen/Vmemload/Vphys/Vavailphys/Vpagefile/Vavailpagefile/Vvirtual/Vavailvirtual");
+define("MEMORYSTATUS_RAW",    "V8");
+define("MEMORYSTATUS_SIZE",   8 * 4);
+function GlobalMemoryStatus() {
+    global $KERNEL, $fgms;
+    $val = pack(MEMORYSTATUS_RAW, MEMORYSTATUS_SIZE,0,0,0,0,0,0,0);
+    wb_call_function($fgms, array($val));
+    return unpack(MEMORYSTATUS, $val);
+}
+$mem = GlobalMemoryStatus();
+$report =  "Total RAM is " . sprintf("%.2f", ($mem["phys"] / (1024 * 1024))) . " MB, " . $mem["memload"] . "% used";
+wb_message_box(null, $report, APPNAME);
+?>

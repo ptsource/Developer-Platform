@@ -1,0 +1,41 @@
+<?php
+function _f($file, $force = false) {
+	return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES","./resources/");
+define("APPNAME", 	"A movable control");
+define("ID_MOVE",	201);
+define("ID_USE",	202);
+$mainwin = wb_create_window(NULL, PopupWindow, APPNAME,
+  WBC_CENTER, WBC_CENTER, 400, 300, WBC_NOTIFY, WBC_MOUSEDOWN | WBC_MOUSEUP | WBC_MOUSEMOVE);
+wb_create_control($mainwin, RadioButton, "Move control", 10, 5,  85, 32, ID_MOVE, 0, true);
+wb_create_control($mainwin, RadioButton, "Use control", 100, 5, 120, 32, ID_USE,  0, false);
+$btn  = wb_create_control($mainwin, PushButton, "Move me", 10, 40, 80, 26, 1001);
+wb_set_enabled($btn, false);
+wb_set_handler($mainwin, "process_main");
+wb_main_loop();
+function process_main($window, $id, $ctrl=0, $lparam1=0, $lparam2=0)
+{
+	global $btn;
+	static $moving = true;
+	switch($id) {
+		case ID_MOVE:
+		case ID_USE:
+			$moving = wb_get_value(wb_get_control($window, ID_MOVE));
+			wb_set_enabled($btn, !$moving);
+			wb_set_text($btn, $moving ? "Move me" : "Use me" );
+			break;
+		case IDDEFAULT:
+			if($moving && ($lparam1 & WBC_LBUTTON)) {
+				$xpos = $lparam2 & 0xFFFF;
+				$ypos = max(50, ($lparam2 & 0xFFFF0000) >> 16);
+				wb_set_position($btn, $xpos - 40, $ypos - 13);
+			}
+			break;
+		case IDCLOSE:
+			wb_destroy_window($window);
+			break;
+	}
+}
+?>

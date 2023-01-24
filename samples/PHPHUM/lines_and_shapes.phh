@@ -1,0 +1,49 @@
+<?php
+function _f($file, $force = false) {
+	return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+} 
+include(_f('SDK.php'));
+define("PATH_RES", "./resources/");
+define("APPNAME", 	"Shapes and lines");	// Application name
+create_main_window();
+wb_main_loop();
+function create_main_window()
+{
+	global $font;
+	$font = wb_create_font("Tahoma", 9, null, FTA_BOLD);
+	$wb->mainwin = wb_create_window(NULL, AppWindow, APPNAME, WBC_CENTER, WBC_CENTER,
+	  520, 190, WBC_INVISIBLE | WBC_NOTIFY | WBC_CUSTOMDRAW, WBC_REDRAW);
+	wb_set_handler($wb->mainwin, "process_main");
+	wb_set_visible($wb->mainwin, true);
+}
+function process_main($window, $id, $ctrl, $lparam1=0, $lparam2=0)
+{
+	global $font;
+	switch($id) {
+		case IDDEFAULT:
+			if($lparam1 & WBC_REDRAW) {
+				$buffer = $lparam2;
+				for($i = 0; $i < 5; $i ++) {
+					wb_draw_rect($buffer, 10 + 50 * $i, 10, 40, 40, 0x0000A0, false, $i + 1);
+					wb_draw_text($buffer, (string)$i, 10 + 50 * $i, 10, 40, 40, $font, WBC_CENTER | WBC_MIDDLE);
+				}
+				for($i = 0; $i < 5; $i ++) {
+					wb_draw_ellipse($buffer, 260 + 50 * $i, 10, 40, 40, 0xA00000, false, $i + 1);
+					wb_draw_text($buffer, (string)$i, 260 + 50 * $i, 10, 40, 40, $font, WBC_CENTER | WBC_MIDDLE);
+				}
+				for($i = 0; $i < 10; $i ++) {
+					wb_draw_rect($buffer, 10 + 50 * $i, 60, 40, 40, 0x004080, false, 0, $i);
+					wb_draw_text($buffer, (string)$i, 10 + 50 * $i, 60, 40, 40, $font, WBC_CENTER | WBC_MIDDLE);
+				}
+				for($i = 0; $i < 10; $i ++) {
+					wb_draw_ellipse($buffer, 10 + 50 * $i, 110, 40, 40, 0x204000, false, 0, $i);
+					wb_draw_text($buffer, (string)$i, 10 + 50 * $i, 110, 40, 40, $font, WBC_CENTER | WBC_MIDDLE);
+				}
+			}
+			break;
+		case IDCLOSE:
+			wb_destroy_window($window);
+			break;
+	}
+}
+?>

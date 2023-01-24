@@ -1,0 +1,55 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES","./resources/");
+define("APPNAME","Double-click test");
+define("ID_EDIT",			101);
+define("ID_ITEMLIST",		102);
+define("ID_DESCRIPTION",	103);
+$items = array(
+             "This code demonstrates how",
+             "to process the double-click",
+             "event. A single-click",
+             "in the list box generates",
+             "one action, while a double-click",
+             "generates another one.",
+         );
+$mainwin = wb_create_window(NULL, PopupWindow, APPNAME, WBC_CENTER, WBC_CENTER, 305, 240,WBC_NOTIFY, WBC_DBLCLICK);
+wb_set_handler($mainwin, "process_main");
+wb_create_control($mainwin, EditBox, "", 10, 15, 225, 22, ID_EDIT);
+wb_create_control($mainwin, PushButton, "Change", 240, 14, 50, 24, IDOK, WBC_DISABLED);
+wb_create_control($mainwin, EditBox, "", 10,150, 280, 22, ID_DESCRIPTION, WBC_READONLY);
+wb_create_control($mainwin, StatusBar, "Click to select, Double-click to edit", $mainwin, 0, 0, 0);
+$itemlist = wb_create_control($mainwin, ListBox, "", 10, 45, 280,100, ID_ITEMLIST);
+wb_set_text($itemlist, $items);
+wb_main_loop();
+function process_main($window, $id, $ctrl=0, $lparam=0) {
+    global $itemlist, $items;
+    switch($id) {
+        case ID_ITEMLIST:
+            if($lparam == WBC_DBLCLICK) {
+                wb_set_text(wb_get_control($window, ID_EDIT), wb_get_text($ctrl));
+                wb_set_text(wb_get_control($window, ID_DESCRIPTION), "");
+                wb_set_enabled(wb_get_control($window, IDOK), TRUE);
+            } else {
+                wb_set_text(wb_get_control($window, ID_EDIT), "");
+                wb_set_text(wb_get_control($window, ID_DESCRIPTION), wb_get_text($ctrl));
+                wb_set_enabled(wb_get_control($window, IDOK), FALSE);
+            }
+            break;
+        case IDOK:
+            $text = trim(wb_get_text(wb_get_control($window, ID_EDIT)));
+            if($text) {
+                $items[wb_get_selected($itemlist)] = $text;
+                wb_set_text($itemlist, $items);
+                wb_set_text(wb_get_control($window, ID_EDIT), "");
+            }
+            break;
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+    }
+}
+?>

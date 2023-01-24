@@ -1,0 +1,30 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("DATE_FMT", "%A, %B %d, %Y");
+define("ID_CALENDAR", 102);
+define("ID_STRTOTIME", 103);
+$cpwindow = wb_create_window(null, PopupWindow, "Calendar test", WBC_CENTER, WBC_CENTER, 400, 300, 0);
+$calendar = wb_create_control($cpwindow, Calendar, "", 95, 70, 200, 160, ID_CALENDAR, WBC_BORDER);
+$statusbar = wb_create_control($cpwindow, StatusBar);
+$edit = wb_create_control($cpwindow, EditBox, "Thursday, April 02, 2020", 10, 10, 260, 20, ID_STRTOTIME);
+wb_create_control($cpwindow, Label, "Type a valid strtotime() string or leave the edit control blank.", 10, 40, 380, 20);
+wb_set_handler($cpwindow, "process_main");
+wb_main_loop();
+function process_main($window, $id, $ctrl = 0, $lparam1 = 0, $lparam2 = 0) {
+    global $edit, $calendar, $statusbar;
+    switch ($id) {
+        case ID_CALENDAR:
+            $date = strftime(DATE_FMT, wb_get_value($ctrl));
+            wb_set_text($statusbar, "Ready");
+            wb_set_text($edit, $date);
+            break;
+        case IDCLOSE:
+            wb_destroy_window($window);
+            break;
+    }
+}
+
+?>

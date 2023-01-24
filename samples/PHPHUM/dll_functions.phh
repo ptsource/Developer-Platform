@@ -1,0 +1,121 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("PATH_RES","./resources/");
+init_dlls();
+$x = GetSystemMetrics(0);
+$y = GetSystemMetrics(1);
+$tick = date("F j, Y, g:i A", time() - GetTickCount() / 1000);
+$comp = GetComputerName();
+$time = GetSystemTime();
+$time = $time["month"] . "/" . $time["day"] . "/" . $time["year"];
+$command = GetCommandLine();
+$mem = GlobalMemoryStatus();
+$ram =  "Total RAM is " . sprintf("%.2f", ($mem["totalphys"] / (1024 * 1024))) . " MB, " . $mem["memoryload"] . "% used";
+$acp = GetACP();
+$oem = GetOEMCP();
+$mainwin = wb_create_window(NULL, PopupWindow, "Hello world!", 480, 420);
+$wbobj = unpack(WBOBJ, wb_peek($mainwin, WBOBJ_SIZE));
+$hwnd = $wbobj["hwnd"];
+$struct = wb_create_control($mainwin, EditBox, print_r($wbobj, true), 0, 0, 470, 380, 101, WBC_MULTILINE | WBC_READONLY);
+wb_set_font($struct, wb_create_font("Courier New", 8));
+wb_set_text($mainwin, "HWND = $hwnd");
+MessageBox($mainwin,
+           "Your current screen resolution is $x by $y pixels.\n" .
+           "Today is $time.\n" .
+           "This machine was turned on: $tick\n" .
+           "Command line: $command\n" .
+           "Computer name: $comp\n" .
+           "Code-page identifiers: $acp (ANSI), $oem (OEM)\n" .
+           "$ram",
+           "Low-level function test");
+wb_main_loop();
+function init_dlls() {
+    global $USER, $KERNEL, $GDI;
+    $USER = wb_load_library("USER");
+    $KERNEL = wb_load_library("KERNEL");
+    $GDI = wb_load_library("GDI");
+    define("WBOBJ",					"Vhwnd/Vid/Vuclass/litem/lsubitem/Vstyle/Vparent/Vhandler/Vlparam/V8lparams/Vpbuffer");
+    define("WBOBJ_RAW",				"V3l2V13");
+    define("WBOBJ_SIZE",			72);
+    define("SYSTEMTIME",			"vyear/vmonth/vdayofweek/vday/vhour/vminute/vsecond/vms");
+    define("SYSTEMTIME_RAW",		"v8");
+    define("SYSTEMTIME_SIZE",		8 * 2);
+    define("MEMORYSTATUS",			"Vlength/Vmemoryload/Vtotalphys/Vavailphys/Vtotalpagefile/Vavailpagefile/Vtotalvirtual/Vavailvirtual");
+    define("MEMORYSTATUS_RAW",		"V8");
+    define("MEMORYSTATUS_SIZE",		8 * 4);
+}
+function GetTickCount() {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    if($pfn === null)
+        $pfn = wb_get_function_address("GetTickCount", $KERNEL);
+    return wb_call_function($pfn);
+}
+function GetACP() {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    if($pfn === null)
+        $pfn = wb_get_function_address("GetACP", $KERNEL);
+    return wb_call_function($pfn);
+}
+function GetOEMCP() {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    if($pfn === null)
+        $pfn = wb_get_function_address("GetOEMCP", $KERNEL);
+    return wb_call_function($pfn);
+}
+function GetSystemMetrics($what) {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    if($pfn === null)
+        $pfn = wb_get_function_address("GetSystemMetrics", $USER);
+    return wb_call_function($pfn, array($what));
+}
+function GetCommandLine() {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    if($pfn === null)
+        $pfn = wb_get_function_address("GetCommandLine", $KERNEL);
+    return wb_peek(wb_call_function($pfn));
+}
+function GetSystemTime() {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    if($pfn === null)
+        $pfn = wb_get_function_address("GetSystemTime", $KERNEL);
+    $val = str_repeat("\0", SYSTEMTIME_SIZE);
+    wb_call_function($pfn, array($val));
+    return unpack(SYSTEMTIME, $val);
+}
+function GlobalMemoryStatus() {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    if($pfn === null)
+        $pfn = wb_get_function_address("GlobalMemoryStatus", $KERNEL);
+    $val = pack(MEMORYSTATUS_RAW, MEMORYSTATUS_SIZE,0,0,0,0,0,0,0);
+    wb_call_function($pfn, array($val));
+    return unpack(MEMORYSTATUS, $val);
+}
+function GetComputerName() {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    if($pfn === null)
+        $pfn = wb_get_function_address("GetComputerName", $KERNEL);
+    $name = str_repeat("\0", 16);
+    $size = 15;
+    if(wb_call_function($pfn, array($name, wb_get_address($size))))
+        return trim($name);
+}
+function MessageBox($parent, $message, $title, $flags=64) {
+    global $USER, $KERNEL, $GDI;
+    static $pfn = null;
+    $wbobj = unpack(WBOBJ, wb_peek($parent, WBOBJ_SIZE));
+    if($pfn === null)
+        $pfn = wb_get_function_address("MessageBox", $USER);
+    return wb_call_function($pfn, array($wbobj["hwnd"], $message, $title, $flags));
+}
+?>

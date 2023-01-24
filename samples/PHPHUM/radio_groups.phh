@@ -1,0 +1,36 @@
+<?php
+function _f($file, $force = false) {
+	return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+} 
+include(_f('SDK.php'));
+define("PATH_RES", "./resources/");
+define("APPNAME", "Radio buttons");
+$mainwin = wb_create_window(null, PopupWindow, APPNAME, WBC_CENTER, WBC_CENTER, 210, 150, WBC_INVISIBLE, 0);
+wb_set_handler($mainwin, "process_main");
+wb_create_control($mainwin, Frame, "Group A", 10, 6, 85, 89); // For cosmetics only
+wb_create_control($mainwin, Label, "(Nothing)", 10, 100, 90, 22, 301);
+wb_create_control($mainwin, RadioButton, "Option A1", 20, 24, 70, 14, 101, WBC_GROUP);
+wb_create_control($mainwin, RadioButton, "Option A2", 20, 48, 70, 14, 102);
+wb_create_control($mainwin, RadioButton, "Option A3", 20, 73, 70, 14, 103);
+wb_create_control($mainwin, Frame, "Group B", 110, 6, 85, 89); // For cosmetics only
+wb_create_control($mainwin, Label, "(Nothing)", 110, 100, 90, 22, 302);
+wb_create_control($mainwin, RadioButton, "Option B1", 120, 24, 70, 14, 201, WBC_GROUP);
+wb_create_control($mainwin, RadioButton, "Option B2", 120, 48, 70, 14, 202);
+wb_create_control($mainwin, RadioButton, "Option B3", 120, 73, 70, 14, 203);
+wb_set_visible($mainwin, true);
+wb_main_loop();
+function process_main($window, $id, $ctrl) {
+	switch ($id) {
+		case 101: case 102: case 103:
+			wb_set_text(wb_get_control($window, 301), wb_get_text($ctrl) . " (#$id)");
+			break;
+		case 201: case 202: case 203:
+			wb_set_text(wb_get_control($window, 302), wb_get_text($ctrl) . " (#$id)");
+			break;
+		case IDCLOSE:
+			wb_destroy_window($window);
+			break;
+	} 
+} 
+
+?>

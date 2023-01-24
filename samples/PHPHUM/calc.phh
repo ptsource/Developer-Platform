@@ -1,0 +1,328 @@
+<?php
+function _f($file, $force = false) {
+    return $force || defined('EMBEDED')?'res:///PHP/' . md5($file):$file;
+}
+include(_f('SDK.php'));
+define("APPNAME", "Calculator"); // Application name
+define("BLANK", "blank");
+if (!defined("IDD_DIALOG")) define("IDD_DIALOG", 101);
+if (!defined("IDC_0")) define("IDC_0", 1000);
+if (!defined("IDC_1")) define("IDC_1", 1001);
+if (!defined("IDC_2")) define("IDC_2", 1002);
+if (!defined("IDC_3")) define("IDC_3", 1003);
+if (!defined("IDC_4")) define("IDC_4", 1004);
+if (!defined("IDC_5")) define("IDC_5", 1005);
+if (!defined("IDC_6")) define("IDC_6", 1006);
+if (!defined("IDC_7")) define("IDC_7", 1007);
+if (!defined("IDC_8")) define("IDC_8", 1008);
+if (!defined("IDC_9")) define("IDC_9", 1009);
+if (!defined("IDC_POINT")) define("IDC_POINT", 1010);
+if (!defined("IDC_ADD")) define("IDC_ADD", 1011);
+if (!defined("IDC_DIV")) define("IDC_DIV", 1012);
+if (!defined("IDC_MULT")) define("IDC_MULT", 1013);
+if (!defined("IDC_SUB")) define("IDC_SUB", 1014);
+if (!defined("IDC_SIGN")) define("IDC_SIGN", 1015);
+if (!defined("IDC_PERCENTAGE")) define("IDC_PERCENTAGE", 1016);
+if (!defined("IDC_CE")) define("IDC_CE", 1017);
+if (!defined("IDC_CLEAR")) define("IDC_CLEAR", 1018);
+if (!defined("IDC_MC")) define("IDC_MC", 1020);
+if (!defined("IDC_MR")) define("IDC_MR", 1021);
+if (!defined("IDC_MADD")) define("IDC_MADD", 1022);
+if (!defined("IDC_SQRT")) define("IDC_SQRT", 1024);
+if (!defined("IDC_GROUPBOX1027")) define("IDC_GROUPBOX1027", 1027);
+if (!defined("IDC_MSUB")) define("IDC_MSUB", 1029);
+if (!defined("IDC_EQUALS")) define("IDC_EQUALS", 1030);
+if (!defined("IDC_BACKSPACE")) define("IDC_BACKSPACE", 1031);
+if (!defined("IDC_SQUARE")) define("IDC_SQUARE", 1034);
+if (!defined("IDC_RECIPROCAL")) define("IDC_RECIPROCAL", 1035);
+if (!defined("IDC_DISPLAY")) define("IDC_DISPLAY", 1036);
+if (!defined("IDC_MEM")) define("IDC_MEM", 1037);
+$mainwin = wb_create_window(null, PopupWindow, "Calculator", WBC_CENTER, WBC_CENTER, 190, 258, 0, 0);
+wb_create_control($mainwin, Frame, "", 7, 29, 170, 196, IDC_GROUPBOX1027, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "0", 49, 190, 55, 26, IDC_0, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "1", 49, 160, 25, 26, IDC_1, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "2", 79, 160, 25, 26, IDC_2, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "3", 109, 160, 25, 26, IDC_3, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "4", 49, 131, 25, 26, IDC_4, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "5", 79, 131, 25, 26, IDC_5, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "6", 109, 131, 25, 26, IDC_6, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "7", 49, 100, 25, 26, IDC_7, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "8", 79, 100, 25, 26, IDC_8, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "9", 109, 100, 25, 26, IDC_9, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, ".", 109, 190, 25, 26, IDC_POINT, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "+", 145, 159, 25, 26, IDC_ADD, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "÷", 145, 69, 25, 26, IDC_DIV, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "×", 145, 100, 25, 26, IDC_MULT, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "-", 145, 130, 25, 26, IDC_SUB, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "+/-", 79, 40, 25, 26, IDC_SIGN, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "%", 109, 71, 25, 26, IDC_PERCENTAGE, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "CE", 14, 71, 25, 26, IDC_CE, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "C", 145, 40, 25, 24, IDC_CLEAR, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "MC", 14, 102, 25, 24, IDC_MC, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "MR", 14, 131, 25, 26, IDC_MR, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "M+", 14, 190, 25, 26, IDC_MADD, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "sqrt", 79, 71, 25, 26, IDC_SQRT, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "M-", 14, 160, 25, 26, IDC_MSUB, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "=", 145, 190, 25, 26, IDC_EQUALS, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "<", 14, 40, 25, 26, IDC_BACKSPACE, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "x²", 49, 71, 25, 26, IDC_SQUARE, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, PushButton, "1/x", 49, 40, 25, 26, IDC_RECIPROCAL, WBC_VISIBLE | WBC_ENABLED, 0);
+wb_create_control($mainwin, EditBox, "", 5, 9, 169, 21, IDC_DISPLAY, WBC_VISIBLE | WBC_ENABLED | WBC_RIGHT, 0);
+wb_create_control($mainwin, Label, "M", 10, 14, 10, 11, IDC_MEM, WBC_INVISIBLE | WBC_ENABLED | WBC_CENTER, 0);
+wb_set_handler($mainwin, "process_main");
+wb_main_loop();
+function process_main($window, $id) {
+    global $memory, $display;
+    switch ($id) {
+        case IDCLOSE: // Predefined constant
+            wb_destroy_window($window);
+            break;
+        case IDC_DISPLAY: // Does not process edit controls
+            break;
+        default: // Process buttons
+            $ctrl = wb_get_control($window, $id);
+            if (wb_get_class($ctrl) != PushButton)
+                break;
+            $caption = trim(wb_get_text($ctrl));
+            switch ($caption) {
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
+                case "0":
+                case ".":
+                    checknumber($caption);
+                    break;
+                case "+":
+                    addbutton(1);
+                    break;
+                case "-":
+                    subbutton(1);
+                    break;
+                case "×":
+                    multbutton(1);
+                    break;
+                case "÷":
+                    divbutton(1);
+                    break;
+                case "<":
+                    backspace($display);
+                    break;
+                case "CE":
+                    cecalc();
+                    break;
+                case "C":
+                    clearcalc();
+                    break;
+                case "=":
+                    equalbutton();
+                    break;
+                case "sqrt":
+                    sqrtbutton();
+                    break;
+                case "x²":
+                    sqrbutton();
+                    break;
+                case "%":
+                    percentbutton();
+                    break;
+                case "1/x":
+                    recipbutton();
+                    break;
+                case "+/-":
+                    negatebutton();
+                    break;
+                case "M-":
+                    memorysubtract($display);
+                    break;
+                case "M+":
+                    memoryadd($display);
+                    break;
+                case "MR":
+                    memoryrecall($memory);
+                    break;
+                case "MC":
+                    memoryclear();
+                    break;
+            } // switch($caption)
+            break;
+    } // switch($id)
+}
+function display($displaynumber) {
+    global $mainwin, $display, $memory;
+    $display = (string)$displaynumber;
+    wb_set_text(wb_get_control($mainwin, IDC_DISPLAY), $display);
+    $memctrl = wb_get_control($mainwin, IDC_MEM);
+    wb_set_visible($memctrl, $memory);
+    if ($memory)
+        wb_refresh($memctrl);
+}
+function checknumber($answer) {
+    global $number1, $number2, $newnumber, $display;
+    if ($answer == ".") {
+        $n = $display;
+        if (strpos($n, '.')) {
+            $answer = "";
+        }
+    }
+    if ($newnumber == true) {
+        $number2 .= $answer;
+        display($number2);
+    } else {
+        if ($newnumber == BLANK) {
+            $number1 = $answer;
+            $number2 = "";
+            $newnumber = false;
+        } else {
+            $number1 .= $answer;
+        }
+        display($number1);
+    }
+}
+function memoryclear() {
+    global $memory, $display;
+    $memory = 0;
+    display($display);
+}
+function memoryrecall($answer) {
+    global $newnumber, $number1, $number2;
+    if ($newnumber != BLANK) {
+        $number2 .= $answer;
+    } else {
+        $number1 = $answer;
+    }
+    $newnumber = BLANK;
+    display($answer);
+}
+function memorysubtract($answer) {
+    global $memory, $display;
+    $memory = $memory - (double)$answer;
+    display($display);
+}
+function memoryadd($answer) {
+    global $memory, $newnumber, $display;
+    $memory = $memory + (double)$answer;
+    $newnumber = BLANK;
+    display($display);
+}
+function clearcalc() {
+    global $newnumber, $number1, $number2;
+    unset($GLOBALS['number1']);
+    unset($GLOBALS['number2']);
+    unset($GLOBALS['newnumber']);
+    display("");
+}
+function backspace($answer) {
+    global $number1, $number2;
+    $answerlength = strlen($answer);
+    $answer = substr($answer, 0, $answerlength - 1);
+    if ($number2 != "") {
+        $number2 = (string)$answer;
+        display($number2);
+    } else {
+        $number1 = (string)$answer;
+        display($number1);
+    }
+}
+function cecalc() {
+    global $number2, $newnumber;
+    $number2 = "";
+    $newnumber = true;
+    display("");
+}
+function addbutton($x) {
+    global $number1, $number2, $newnumber, $opvalue;
+    if ($x == 1)
+        equalbutton();
+    if ($number2 != "") {
+        $number1 = (double)$number1 + (double)$number2;
+    }
+    $newnumber = true;
+    $opvalue = '+';
+    display($number1);
+}
+function subbutton($x) {
+    global $number1, $number2, $newnumber, $opvalue;
+    if ($x == 1)
+        equalbutton();
+    if ($number2 != "") {
+        $number1 = (double)$number1 - (double)$number2;
+    }
+    $newnumber = true;
+    $opvalue = '-';
+    display($number1);
+}
+function multbutton($x) {
+    global $number1, $number2, $newnumber, $opvalue;
+    if ($x == 1)
+        equalbutton();
+    if ($number2 != "") {
+        $number1 = (double)$number1 * (double)$number2;
+    }
+    $newnumber = true;
+    $opvalue = '*';
+    display($number1);
+}
+function divbutton($x) {
+    global $number1, $number2, $newnumber, $opvalue;
+    if ($x == 1)
+        equalbutton();
+    if ($number2 != "") {
+        $number1 = (double)$number1 / (double)$number2;
+    }
+    $newnumber = true;
+    $opvalue = '/';
+    display($number1);
+}
+function sqrbutton() {
+    global $number1, $newnumber;
+    $number1 = $number1 * $number1;
+    $newnumber = BLANK;
+    display($number1);
+}
+function sqrtbutton() {
+    global $number1, $newnumber;
+    $number1 = sqrt($number1);
+    $newnumber = BLANK;
+    display($number1);
+}
+function percentbutton() {
+    global $number1, $number2, $newnumber;
+    if ($newnumber != BLANK) {
+        $number2 *= 0.01;
+        $newnumber = BLANK;
+        display($number2);
+    }
+}
+function recipbutton() {
+    global $number1, $newnumber;
+    $number1 = 1 / $number1;
+    $newnumber = BLANK;
+    display($number1);
+}
+function negatebutton() {
+    global $number1, $newnumber;
+    $number1 = - (double)$number1;
+    $newnumber = false;
+    display($number1);
+}
+function equalbutton() {
+    global $number1, $number2, $opvalue;
+    if ($opvalue == '+')
+        addbutton(0);
+    if ($opvalue == '-')
+        subbutton(0);
+    if ($opvalue == '*')
+        multbutton(0);
+    if ($opvalue == '/')
+        divbutton(0);
+    $number2 = "";
+    $opvalue = "";
+}
+
+?>
