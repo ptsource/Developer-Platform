@@ -1,0 +1,38 @@
+SHELL = /bin/sh
+INSTALL = @INSTALL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+installroot = @installroot@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+REPL_EXT=@replsuffix@
+SPEC_EXT=@specsuffix@
+LIB_DIR=$(libdir)/tkpaint
+
+all:
+clean:
+install: install-dirs install-gifs 
+install-gifs:
+	for i in *.gif; do\
+	   $(INSTALL) -m 0644 $$i $(LIB_DIR)/gifs;\
+	done
+install-dirs:
+	../mkinstalldirs $(LIB_DIR)/gifs && chmod 0755 $(LIB_DIR)/gifs
+dist:
+	rm Makefile

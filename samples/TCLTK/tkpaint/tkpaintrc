@@ -1,0 +1,56 @@
+# You may edit this file, but you must be careful!
+# One tiny error can turn tkpaint into a time bomb!
+
+
+set Graphics(arrowshape) {8 10 4}
+set Graphics(fill,color) {}
+set Graphics(fill,style) {}
+set Graphics(font,bold) 0
+set Graphics(font,color) black
+set Graphics(font,italic) 0
+set Graphics(font,normal) 0
+set Graphics(font,overstrike) 0
+set Graphics(font,roman) 0
+set Graphics(font,size) 10
+set Graphics(font,stipple) {}
+set Graphics(font,style) {}
+set Graphics(font,type) Helvetica
+set Graphics(font,underline) 0
+set Graphics(grid,on) 0
+set Graphics(grid,size) 10m
+set Graphics(grid,snap) 1
+set Graphics(line,arrow) none
+set Graphics(line,capstyle) butt
+set Graphics(line,color) black
+set Graphics(line,joinstyle) miter
+set Graphics(line,style) {}
+set Graphics(line,dash) {}
+set Graphics(line,width) 1
+set Graphics(mode) NULL
+set Graphics(shape) none
+set Graphics(snap,on) 0
+set Graphics(snap,size) 1
+set Graphics(splinesteps) 20
+set Graphics(text,anchor) c
+set Graphics(ticks,on) 0
+set Graphics(mode) NULL
+### End of Graphics parameters
+
+
+# Now we save the canvas width, height, bg color,
+# scroll region width and height:
+set Canv(H) 364
+set Canv(W) 606
+set Canv(SH) 1500
+set Canv(SW) 1500
+set Canv(bg) white
+# Some explanations:
+# H = height
+# W = width
+# SH = Scroll region height
+# SW = Scroll region width
+# Now we issue some tcl/tk commands to set the canvas view:
+.c config -width $Canv(W) -height $Canv(H)  -bg $Canv(bg)  -scrollregion "0 0 $Canv(SW) $Canv(SH)"
+wm geometry . ""
+.c xview moveto 0
+.c yview moveto 0
