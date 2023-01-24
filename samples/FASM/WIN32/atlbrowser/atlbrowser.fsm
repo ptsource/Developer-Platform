@@ -1,0 +1,109 @@
+format PE GUI 4.0
+entry start
+include '%fasminc%\win32a.inc'
+
+section '.data' data readable writable
+
+ClassName db 'FASMWIN32',0
+title     db 'ATL Browser',0
+wc WNDCLASS 0,WindowProc,0,0,0,0,0,COLOR_BTNFACE+1,0,ClassName
+msg MSG
+  WinX      dd 0      
+  WinY      dd 0         
+  WinW      dd 900      
+  WinH      dd 500 
+szDLL			db	'atl.dll',0
+szAtlAxWinInit  db	'AtlAxWinInit',0
+szClass			db	'AtlAxWin',0
+szUrl			db	'http://ptsource.eu/',0
+hWeb			dd ?
+hLib			dd ?
+hInstance dd ?
+section '.code'code readable executable
+start:
+
+invoke  LoadLibrary,szDLL
+invoke	GetProcAddress,eax,szAtlAxWinInit
+call eax
+invoke GetModuleHandle,NULL
+mov [wc.hInstance],eax
+invoke LoadIcon,0,IDI_APPLICATION
+mov [wc.hIcon],eax
+invoke LoadCursor,0,IDC_ARROW
+mov [wc.hCursor],eax
+invoke RegisterClass,wc
+;================================
+; Centre window at following size
+;================================
+   
+invoke GetSystemMetrics,SM_CXSCREEN
+sub eax,[WinW]
+shr eax,1
+mov [WinX],eax
+
+invoke GetSystemMetrics,SM_CYSCREEN
+sub eax,[WinH]
+shr eax,1
+mov [WinY],eax
+invoke CreateWindowEx,0,ClassName,title,WS_VISIBLE+WS_DLGFRAME+WS_SYSMENU,[WinX],[WinY],[WinW],[WinH],0,0,[wc.hInstance],0
+msg_loop:
+invoke GetMessage,msg,0,0,0
+cmp eax,0
+je end_loop
+invoke TranslateMessage,msg
+invoke DispatchMessage,msg
+jmp msg_loop
+
+
+end_loop:
+invoke ExitProcess,[msg.wParam]
+
+proc WindowProc hwnd,wmsg,wparam,lparam
+push ebx esi edi
+local rect RECT
+cmp [wmsg],WM_DESTROY
+je .wmdestroy
+cmp [wmsg],WM_ACTIVATE
+je .wmactivate
+
+.defwndproc:
+invoke DefWindowProc,[hwnd],[wmsg],[wparam],[lparam]
+jmp .finish
+.wmactivate:
+invoke CreateWindowEx,NULL,szClass,szUrl,WS_CHILD or WS_VISIBLE or WS_BORDER or WS_HSCROLL or WS_VSCROLL,30,30,850,400,[hwnd],NULL,[hInstance],NULL
+mov [hWeb], eax
+jmp .finish
+
+
+.wmdestroy:
+invoke PostQuitMessage,0
+mov eax,0
+.finish:
+pop edi esi ebx
+ret
+endp
+
+section '.idata' import data readable writable
+
+
+  library kernel,'KERNEL32.DLL',\
+          user,'USER32.DLL'
+
+import kernel,\
+LoadLibrary,'LoadLibraryA',\
+GetProcAddress,'GetProcAddress',\
+GetModuleHandle,'GetModuleHandleA',\
+ExitProcess,'ExitProcess'
+
+import user,\
+LoadIcon , 'LoadIconA',\
+LoadCursor,'LoadCursorW',\
+RegisterClass,'RegisterClassA',\
+GetSystemMetrics,'GetSystemMetrics',\
+CreateWindowEx,'CreateWindowExA',\
+GetMessage,'GetMessageA',\
+TranslateMessage,'TranslateMessage',\
+DispatchMessage,'DispatchMessageA',\
+DefWindowProc,'DefWindowProcA',\
+PostQuitMessage,'PostQuitMessage'
+
