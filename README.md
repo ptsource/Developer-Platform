@@ -41,7 +41,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Python & PIP
 * PHP
 * Perl & CPAN
-* Tcl/Tk
+* Tcl/Tk & FreeWrap
 * [VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start)
 * Project Manager
 * Themes
