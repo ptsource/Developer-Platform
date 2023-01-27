@@ -68,7 +68,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 | FASM |  ASM  | :white_check_mark: |  :white_check_mark: | 1.73.09 |
 | FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | 1.0.7 |
 | FreePascal |  Pascal  | :white_check_mark: | :white_check_mark: | 3.0.4 |
-| [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start) |  PHP  | :white_check_mark: |  :x: | 5.6.40 |
 
 
 **Note :** This software does not use a digitally signed installer, so
