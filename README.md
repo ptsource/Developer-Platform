@@ -25,13 +25,14 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [PTSource Shell](https://wiki.ptsource.eu/soft/ptshell/start)
 * HarbourMG
 * MinGW-w64
-* [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start)
+* PTSource [PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start)
 * FASM
 * TCC
 * RayLib
 * FreeBasic
 * FreePascal
 * Premake5
+* CMake
 * CPPCheck
 * Vim
 * Nano
@@ -42,7 +43,8 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * PHP
 * Perl & CPAN
 * Tcl/Tk & FreeWrap
-* [VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start)
+* [PTSource VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start)
+* [PTSource DiffTool](https://wiki.ptsource.eu/soft/ptdiff/start)
 * Project Manager
 * Themes
 * Macros
