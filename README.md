@@ -25,7 +25,6 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [PTSource Shell](https://wiki.ptsource.eu/soft/ptshell/start)
 * HarbourMG
 * MinGW-w64
-* [PTSource PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start)
 * FASM
 * TCC
 * RayLib
@@ -38,10 +37,10 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Nano
 * Midnight Commander
 * NSIS Install Maker
-* NodeJS & NPM
-* Python & PIP
-* PHP
-* Perl & CPAN
+* NodeJS with NPM
+* [PTSource PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start)
+* Python with PIP, PyInstaller, Tkinter, WXWidgets, TTKThemes, Pygubu-Designer
+* Perl with CPAN
 * Tcl/Tk & FreeWrap
 * [PTSource VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start)
 * [PTSource DiffTool](https://wiki.ptsource.eu/soft/ptdiff/start)
@@ -51,7 +50,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Sample code
 * Code beautifiers
 * FTP Client
-* GIT
+* GIT with Gitk, Gui-Gui
 * Customizable tools
 * Column markers
 * Bookmarks
