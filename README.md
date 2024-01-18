@@ -35,6 +35,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * CPPCheck
 * Vim
 * Nano
+* LUA
 * Midnight Commander
 * NSIS Install Maker
 * NodeJS with NPM
