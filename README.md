@@ -42,7 +42,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * [PTSource PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start)
 * Python with PIP, PyInstaller, Tkinter, WXWidgets, TTKThemes, Pygubu-Designer
 * Perl with CPAN
-* Tcl/Tk with FreeWrap, BLT, Tile, BWidget, PlotChart, Diagrams, 3DOGL
+* Tcl/Tk with FreeWrap, BLT, Tile, BWidget, PlotChart, Diagrams, 3DOGL, SQLite
 * [PTSource VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start)
 * [PTSource DiffTool](https://wiki.ptsource.eu/soft/ptdiff/start)
 * Project Manager
