@@ -17,13 +17,13 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/01.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03.PNG" width="33%">
-<img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/05.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/06.PNG" width="33%">
+<img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/01B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/02B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/03B.PNG" width="33%">
+<img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/04B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/05B.PNG" width="33%"><img src="https://raw.githubusercontent.com/ptsource/Developer-Platform/master/images/06B.PNG" width="33%">
 
 ## Features 
 
-* [PTSource Shell](https://wiki.ptsource.eu/soft/ptshell/start)
-* [PTSource PTSGET](https://wiki.ptsource.eu/soft/ptsget/start)
+* [PTSource Shell](https://wiki.ptsource.eu/soft/ptshell/start) included
+* [PTSource PTSGET](https://wiki.ptsource.eu/soft/ptsget/start) included
 * HarbourMG
 * MinGW-w64
 * FASM
@@ -40,12 +40,12 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * Midnight Commander
 * NSIS Install Maker
 * NodeJS with NPM
-* [PTSource PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start)
+* [PTSource PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start) included
 * Python with PIP, PyInstaller, Tkinter, WXWidgets, TTKThemes, Pygubu-Designer
 * Perl with CPAN
 * Tcl/Tk with FreeWrap, BLT, Tile, BWidget, PlotChart, Diagrams, 3DOGL, SQLite
-* [PTSource VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start)
-* [PTSource DiffTool](https://wiki.ptsource.eu/soft/ptdiff/start)
+* [PTSource VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start) file support
+* [PTSource DiffTool](https://wiki.ptsource.eu/soft/ptdiff/start) included
 * Project Manager
 * Themes
 * Macros
