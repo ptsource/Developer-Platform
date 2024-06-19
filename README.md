@@ -27,6 +27,7 @@ PTSource Developer Platform is a free professional IDE, Source Code Editor and C
 * HarbourMG
 * MinGW-w64
 * FASM
+* NASM
 * TCC
 * RayLib
 * FreeBasic
