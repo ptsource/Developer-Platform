@@ -5,7 +5,7 @@ Computer programming is a process that leads from an original formulation of a c
 # PTSource Developer Platform
 ### Current version 21 updated 13/06/2024 for Windows
 
-PTSource Developer Platform is a free professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students with build environments for Windows x86 and x64. It offers many powerful features for programming and syntax highlighing for over 100 languages. It already brings HarbourMG, MingGW-w64, TCC, FASM, FreeBasic and FreePascal as native compilers, PHP, Perl, Tcl/TK, NodeJS and Python as interpreters and Git as its version control system but supports a wide variety of compilers, assemblers and interpreters.
+PTSource Developer Platform is a professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students with build environments for Windows x86 and x64. It offers many powerful features for programming and syntax highlighing for over 100 languages. It already brings HarbourMG, MingGW-w64, TCC, FASM, FreeBasic and FreePascal as native compilers, PHP, Perl, Tcl/TK, NodeJS and Python as interpreters and Git as its version control system but supports a wide variety of compilers, assemblers and interpreters.
 
 |  System requirements  |  
 |         :---:         | 
