@@ -13,7 +13,7 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 
 ## Download
 
-[![Maintenance](/images/maintained.svg)](https://wiki.ptsource.eu/soft/platform/start)  [![You can download here.](/images/version-21-red.svg)](https://wiki.ptsource.eu/files)  [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/files) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/platform/start)
+[![Maintenance](/images/maintained.svg)](https://wiki.ptsource.eu/soft/platform/start)  [![You can download here.](/images/version-21-red.svg)](https://wiki.ptsource.eu/fileswin)  [![You can download here.](/images/download-here-green.svg)](https://wiki.ptsource.eu/fileswin) [![Help here.](/images/docs-here-blue.svg)](https://wiki.ptsource.eu/soft/platform/start)
 
 ## Screenshots
 
