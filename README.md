@@ -34,6 +34,7 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 * FreePascal
 * Premake5
 * CMake
+* GenMake
 * CPPCheck
 * Vim
 * Nano
