@@ -70,7 +70,7 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 | ------------- | ------------- |
 | Freewrap | Tcl/Tk |
 | PyInstaller |  Python |
-| Perl2Bin |  Perl  |
+| PerltoBin |  Perl  |
 | HumCL |  PHP  |
 
 ## Compilers Included
