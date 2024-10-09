@@ -45,7 +45,7 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 * [PTSource PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start) included
 * Python with PIP, PyInstaller, Tkinter, WXWidgets, TTKThemes, Pygubu-Designer, PyGame, PyOpenGL
 * Perl with Tk, PerltoBin
-* Tcl/Tk with FreeWrap, BLT, Tile, BWidget, PlotChart, Diagrams, 3DOGL, SQLite
+* Tcl/Tk with FreeWrap, BLT, Tile, BWidget, PlotChart, Diagrams, 3DOGL
 * [PTSource VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start) file support
 * [PTSource DiffTool](https://wiki.ptsource.eu/soft/ptdiff/start) included
 * Project Manager
@@ -62,6 +62,15 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 * Search and replace in multiple files
 * Supports calling external tools
 * ... and much more
+
+## Script Compilers Included
+
+| Compiler  | Language |
+| ------------- | ------------- |
+| Freewrap | Tcl/Tk |
+| PyInstaller |  C/C++ |
+| Perl2Bin |  Perl  |
+| HumCL |  PHP  |
 
 ## Compilers Included
 
