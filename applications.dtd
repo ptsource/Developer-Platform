@@ -1,0 +1,18 @@
+<!ELEMENT applications (pubkey*|signature*|suggest*|versions*|feedback*|group*|app*)*>
+<!ELEMENT pubkey (#PCDATA)>
+<!ELEMENT signature (#PCDATA)>
+<!ELEMENT suggest (#PCDATA)>
+<!ELEMENT versions (#PCDATA)>
+<!ELEMENT feedback (#PCDATA)>
+<!ELEMENT app (name|description?|html?|file+)+>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT html (#PCDATA)>
+<!ELEMENT file (#PCDATA)>
+<!ELEMENT group (package+)>
+<!ELEMENT package (#PCDATA)>
+
+<!ATTLIST app id CDATA #IMPLIED>
+<!ATTLIST feedback type CDATA #REQUIRED>
+<!ATTLIST group name CDATA #REQUIRED>
+<!ATTLIST package version CDATA #IMPLIED>
