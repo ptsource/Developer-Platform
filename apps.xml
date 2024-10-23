@@ -1,28 +1,32 @@
-<app>
-        <name>
-                Appupdater
-        </name>
-        <description>
-                Appupdater provides advanced functionality to Windows, similar to apt-get or yum on Linux.
-        </description>
-        <html>
-                http://wiki.ptsource.eu/appupdater/
-        </html>
-        <file>
-                appupdater.exe
-        </file>
-</app>
-<app>
-        <name>
-                Chromium
-        </name>
-        <description>
-                Google's Web Browser
-        </description>
-        <html>
-                http://code.google.com/chromium/
-        </html>
-        <file>
-                chrome.exe
-        </file>
-</app>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE applications SYSTEM "https://ptsource.github.io/Developer-Platform/applications.dtd">
+<applications>
+	<versions>https://ptsource.github.io/Developer-Platform/versions.xml</versions>
+        <app>
+                <name>
+                        Appupdater
+                </name>
+                <description>
+                        Appupdater provides advanced functionality to Windows, similar to apt-get or yum on Linux.
+                </description>
+                <html>
+                        http://wiki.ptsource.eu/appupdater/
+                </html>
+                <file>
+                        appupdater.exe
+                </file>
+        </app>
+        <app>
+                <name>
+                        Chromium
+                </name>
+                <description>
+                        Google's Web Browser
+                </description>
+                <html>
+                        http://code.google.com/chromium/
+                </html>
+                <file>
+                        chrome.exe
+                </file>
+        </app></applications>
