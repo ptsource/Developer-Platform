@@ -48,7 +48,7 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 * Midnight Commander
 * NSIS Install Maker
 * NodeJS with NPM
-* Python with PIP, PyInstaller, Tkinter, WXWidgets, TTKThemes, Pygubu-Designer, PyGame, PyOpenGL
+* Python with PIP, PyInstaller, Py2exe, Tkinter, WXWidgets, TTKThemes, Pygubu-Designer, PyGame, PyOpenGL
 * Perl with Tk, PerltoBin
 * Tcl/Tk with FreeWrap, BLT, Tile, BWidget, PlotChart, Diagrams, 3DOGL
 * Project Manager
@@ -66,12 +66,17 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 * Supports calling external tools
 * ... and much more
 
+## Specific Machine Compilers Included
+| Compiler  | Language | Machine |
+| Batari | Basic | Atari 2600 |
+| Pasmo | ASM | ZX Spectrum |
+
 ## Script Compilers Included
 
 | Compiler  | Language |
 | ------------- | ------------- |
 | Freewrap | Tcl/Tk |
-| PyInstaller |  Python |
+| PyInstaller, Py2exe |  Python |
 | PerltoBin |  Perl  |
 | HumCL |  PHP  |
 
