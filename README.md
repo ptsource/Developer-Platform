@@ -71,6 +71,7 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 | ------------- | ------------- | ------------- | 
 | Batari | Basic | Atari 2600 |
 | Pasmo | ASM | Z80 (ZXSpectrum & Amstrad CPC) |
+| SDCC | C | MCS51, GBZ80, Z80, DS390, DS400, HC08 |
 
 ## Script Compilers Included
 
