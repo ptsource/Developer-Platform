@@ -82,7 +82,7 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 | PerltoBin |  Perl  |
 | HumCL |  PHP  |
 
-## Compilers Included
+## Windows Compilers Included
 
 | Compiler  | Language | x86 | x64 | Version |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
