@@ -25,7 +25,7 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 * [PTSource Shell](https://wiki.ptsource.eu/soft/platform/shell) included
 * [PTSource Designer](https://wiki.ptsource.eu/soft/platform/designer) included
 * [PTSource PHP-HUM](https://wiki.ptsource.eu/soft/phphum/start) included
-* [PTSource DiffTool](https://wiki.ptsource.eu/portables) included
+* [PTSource DiffTool](https://wiki.ptsource.eu/soft/platform/difftool) included
 * [PTSource PTSGET](https://wiki.ptsource.eu/soft/ptsget/start) package manager included
 * [PTSource VRGrid](https://wiki.ptsource.eu/soft/vrgrid/start) file support
 * HarbourMG
