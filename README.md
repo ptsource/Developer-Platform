@@ -66,6 +66,18 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 * Supports calling external tools
 * ... and much more
 
+## Windows Compilers Included
+
+| Compiler  | Language | x86 | x64 | Version |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| HarbourMG | C/CLI | :white_check_mark: | :white_check_mark: | 3.2.0 |
+| MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | 5.3.0 |
+| TCC |  C  | :white_check_mark: |  :white_check_mark: | 0.9.22 |
+| FASM |  ASM  | :white_check_mark: |  :white_check_mark: | 1.73.09 |
+| NASM |  ASM  | :white_check_mark: |  :white_check_mark: | 2.16.03 |
+| FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | 1.0.7 |
+| FreePascal |  Pascal  | :white_check_mark: | :white_check_mark: | 3.0.4 |
+
 ## Specific Machine Compilers Included
 | Compiler  | Language | Machine |
 | ------------- | ------------- | ------------- | 
@@ -84,18 +96,6 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 | PyInstaller, Py2exe |  Python |
 | PerltoBin |  Perl  |
 | HumCL |  PHP  |
-
-## Windows Compilers Included
-
-| Compiler  | Language | x86 | x64 | Version |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| HarbourMG | C/CLI | :white_check_mark: | :white_check_mark: | 3.2.0 |
-| MinGW-w64 |  C/C++ | :white_check_mark: |  :white_check_mark: | 5.3.0 |
-| TCC |  C  | :white_check_mark: |  :white_check_mark: | 0.9.22 |
-| FASM |  ASM  | :white_check_mark: |  :white_check_mark: | 1.73.09 |
-| NASM |  ASM  | :white_check_mark: |  :white_check_mark: | 2.16.03 |
-| FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | 1.0.7 |
-| FreePascal |  Pascal  | :white_check_mark: | :white_check_mark: | 3.0.4 |
 
 
 **Note :** This software does not use a digitally signed installer, so
