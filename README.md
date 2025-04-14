@@ -66,6 +66,11 @@ PTSource Developer Platform is a professional IDE, Source Code Editor and Compil
 * Supports calling external tools
 * ... and much more
 
+## Extra Packages
+
+PTSource Developer Platform uses [PTSource PTSGet](https://store.ptsource.eu/soft/ptsget/start) to maintain extra packages. [PTSource PTSGet](https://store.ptsource.eu/soft/ptsget/start) is a command-line package management tool used in PTSource distributions. It simplifies the process of installing, updating, and removing software packages. With a vast repository of precompiled packages provides access to a wide range of applications for users and administrators alike.
+See [here](https://store.ptsource.eu/soft/ptsget/start#ptsgetplatform) all avaliable extra packages.
+
 ## Windows Compilers Included
 
 | Compiler  | Language | x86 | x64 | Version |
