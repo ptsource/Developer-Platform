@@ -104,6 +104,6 @@ See [here](https://store.ptsource.eu/soft/ptsget/start#ptsgetplatform) all avali
 
 ## Support
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O4O81IMGPT)
+[![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://wiki.ptsource.eu/soft/platform/start)
 
 
