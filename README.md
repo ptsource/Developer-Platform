@@ -103,7 +103,7 @@ See [here](https://repo.ptsource.eu/?dir=platform) all avaliable extra packages.
 | PerltoBin |  Perl  |
 | HumCL |  PHP  |
 
-## Support
+## Homepage
 
 [![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://wiki.ptsource.eu/soft/platform/start)
 
