@@ -4,7 +4,7 @@ Computer programming is a process that leads from an original formulation of a c
 
 # PTSource Developer Platform
 ### Current version 22 ([LTSR](LTSR.md)) Final for Windows (2026)
-#### [![ko-fi](/images/ko-fi.png)](https://ko-fi.com/ptsource) For updates and change logs.
+#### [![ko-fi](/images/ko-fi.png)](https://ko-fi.com/ptsource) For updates, change logs or to buy us a coffee.
 
 PTSource Developer Platform is a professional IDE, Source Code Editor and Compiler, tools, templates and  libs for professionals and students with build environments for Windows x86 and x64, MCS51, GBZ80, Z80, HC08 and Atari 2600. It offers many powerful features for programming and syntax highlighing for over 100 languages. It already brings HarbourMG, MingGW-w64, TCC, FASM, FreeBasic and FreePascal as native compilers, PHP, Perl, Tcl/TK, NodeJS and Python as interpreters and Git as its version control system but supports a wide variety of compilers, assemblers and interpreters.
 
