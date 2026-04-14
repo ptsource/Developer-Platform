@@ -83,6 +83,7 @@ See [here](https://repo.ptsource.eu/?dir=platform) all avaliable extra packages.
 | NASM |  ASM  | :white_check_mark: |  :white_check_mark: | 2.16.03 |
 | FreeBasic |  Basic  | :white_check_mark: | :white_check_mark: | 1.0.7 |
 | FreePascal |  Pascal  | :white_check_mark: | :white_check_mark: | 3.0.4 |
+| GO |  GOLANG | :white_check_mark: | :white_check_mark: | 1.23.2 |
 
 ## Specific Machine Compilers Included
 | Compiler  | Language | Machine |
