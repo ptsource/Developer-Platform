@@ -109,4 +109,8 @@ See [here](https://store.ptsource.eu/soft/ptsget/platform) all avaliable extra p
 
 [![Visit homepage.](/images/homepage-here-yellowgreen.svg)](https://wiki.ptsource.eu/soft/platform/start)
 
+<p align="center" width="100%">
+    <a href="https://store.ptsource.eu/soft/platform/start" target="_blank"><img src="/images/bannerplatform.png" alt="PTSource Developer Platform"></a> 
+</p>
+
 
