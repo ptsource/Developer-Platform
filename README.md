@@ -112,5 +112,8 @@ See [here](https://store.ptsource.eu/soft/ptsget/platform) all avaliable extra p
 <p align="center" width="100%">
     <a href="https://store.ptsource.eu/soft/platform/start" target="_blank"><img src="/images/bannerplatform.png" alt="PTSource Developer Platform"></a> 
 </p>
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/ptsource/MiniVMDOS/master/images/madeeu.png"><img src="https://raw.githubusercontent.com/ptsource/MiniVMDOS/master/images/noai.png">
+</p>
 
 
